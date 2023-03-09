@@ -1,0 +1,32 @@
+/*! main.scss | Minimal | Css ninja 2022-2023 */
+
+/* ==========================================================================
+SCSS Imports
+========================================================================== */
+
+//CSS vars setup
+@import "./bulma-generated/generated-vars.sass";
+@import "./css-variables/all";
+
+//Additional variables
+@import './abstracts/rtl';
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+//Bulma
+@import "../../node_modules/@cssninja/bulma-css-vars/bulma-cv-lib";
+
+//Utilities
+@import "utilities/all";
+
+//Base
+@import "base/all";
+
+//Forms
+@import "forms/all";
+
+//Layout
+@import "layout/all";
+
+//Components
+@import "components/all";

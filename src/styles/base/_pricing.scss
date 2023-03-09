@@ -1,0 +1,278 @@
+/*
+    1. Regular Pricing
+*/
+
+/* ==========================================================================
+1. Regular Pricing
+========================================================================== */
+
+.pricing-table {
+  .pricing-plan {
+    background: var(--card-bg-color);
+    border: 1px solid var(--card-border-color);
+    box-shadow: none;
+
+    &.is-active {
+      box-shadow: var(--light-box-shadow) !important;
+      border: 1px solid var(--primary) !important;
+    }
+
+    .plan-header {
+      font-family: var(--font-alt);
+      color: var(--dark-text);
+    }
+
+    .plan-price,
+    .plan-items {
+      font-family: var(--font);
+    }
+  }
+}
+
+.pricing-table {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  &.is-comparative {
+    .pricing-plan {
+      border-radius: initial;
+      margin: 0;
+
+      &:not(:last-child) {
+        border-#{$end-direction}: none;
+      }
+
+      &:first-child {
+        border-top-#{$start-direction}-radius: 0.5rem;
+        border-bottom-#{$start-direction}-radius: 0.5rem;
+      }
+
+      &:last-child {
+        border-top-#{$end-direction}-radius: 0.5rem;
+        border-bottom-#{$end-direction}-radius: 0.5rem;
+      }
+
+      &.is-active {
+        border: 1px solid var(--primary);
+        border-radius: 0.5rem;
+      }
+    }
+  }
+
+  .pricing-plan {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    background-color: var(--card-bg-color);
+    border: 1px solid var(--card-border-color);
+    border-radius: 0.5rem;
+    list-style-type: none;
+    transition: 0.25s;
+    margin: 0.5em;
+    overflow: hidden;
+
+    .plan-header {
+      border-top-#{$start-direction}-radius: 0.5rem;
+      border-top-#{$end-direction}-radius: 0.5rem;
+      background-color: var(--card-bg-color);
+      color: var(--title-color);
+      font-size: 1.25rem;
+      font-weight: 600;
+      padding: 0.75em;
+      align-content: center;
+      text-align: center;
+    }
+
+    .plan-item {
+      background: var(--card-bg-color);
+      border-bottom: 1px solid var(--card-border-color);
+      padding: 0.75em;
+      align-content: center;
+      text-align: center;
+      font-size: 0.9em;
+      color: var(--medium-text);
+    }
+
+    .plan-price {
+      background-color: var(--card-bg-color);
+      color: var(--medium-text);
+      font-size: 0.9rem;
+      font-weight: 400;
+      padding: 0.75em;
+      align-content: center;
+      text-align: center;
+
+      .plan-price-amount {
+        color: var(--title-color);
+        font-size: 1.75rem;
+        font-weight: 700;
+
+        .plan-price-currency {
+          vertical-align: super;
+          font-size: 1rem !important;
+          font-weight: 400 !important;
+          color: var(--title-color);
+          margin-#{$end-direction}: 0.25rem;
+        }
+      }
+    }
+
+    .plan-footer {
+      border-bottom-#{$start-direction}-radius: 0.5rem;
+      border-bottom-#{$end-direction}-radius: 0.5rem;
+      padding: 0.75em;
+      align-content: center;
+      text-align: center;
+      margin-top: auto;
+    }
+
+    &.is-active {
+      box-shadow: var(--light-box-shadow);
+      transform: scale(1.05);
+
+      .plan-price {
+        .plan-price-amount {
+          color: var(--primary);
+
+          .plan-price-currency {
+            color: var(--primary);
+          }
+        }
+      }
+
+      .plan-footer {
+        .button {
+          background-color: var(--primary);
+          border-color: transparent;
+          color: var(--button-primary-color);
+
+          &:hover,
+          &.is-hovered {
+            border-color: transparent;
+            color: var(--button-primary-color);
+          }
+
+          &:focus,
+          &.is-focused {
+            border-color: transparent;
+            box-shadow: var(--light-box-shadow);
+            color: var(--button-primary-color);
+          }
+
+          &:active,
+          &.is-active {
+            background-color: var(--primary);
+            border-color: transparent;
+            color: var(--button-primary-color);
+          }
+
+          &[disabled] {
+            //background-color: var(--primary);
+            border-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .pricing-table {
+    .pricing-plan {
+      width: 100%;
+      border: 1px solid var(--card-border-color) !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .pricing-table {
+    &.is-horizontal {
+      .pricing-plan {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 100%;
+
+        .plan-header {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .plan-price {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .plan-items {
+          width: 100%;
+          background-color: var(--card-bg-color);
+          columns: 2;
+          -webkit-columns: 2;
+          -moz-columns: 2;
+          column-gap: 0.1rem;
+        }
+
+        .plan-footer {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .pricing-table {
+    &.is-comparative {
+      margin: 0.5rem;
+
+      .plan-item {
+        &::before {
+          content: attr("data-feature");
+        }
+      }
+
+      &.is-features {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .pricing-table {
+    &.is-comparative {
+      .pricing-plan {
+        margin: 0.5rem;
+
+        &.is-plan-first-mobile {
+          order: -1;
+        }
+        &.is-features {
+          display: none;
+        }
+
+        .plan-item {
+          &::before {
+            content: attr(data-feature);
+            display: block;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--wrap-muted-color);
+          }
+        }
+      }
+    }
+  }
+}

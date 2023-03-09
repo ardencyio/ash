@@ -1,0 +1,122 @@
+---
+import Layout from "../layouts/Minimal.astro";
+const title = "Signup";
+---
+
+<Layout title={title}>
+  <div class="signup-wrapper">
+    <!--Nav-->
+    <div class="signup-nav">
+      <div class="container">
+        <div class="signup-nav-inner">
+          <div class="start">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="/">
+                <img
+                  class="light-image-block"
+                  src="/img/logo/minimal.svg"
+                  alt=""
+                />
+                <img
+                  class="dark-image-block"
+                  src="/img/logo/minimal-white.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <div class="end">
+            <label class="theme-toggle">
+              <input
+                type="checkbox"
+                x-on:change="toggleTheme()"
+                :checked="$store.app.isDark"
+              />
+              <span class="theme-toggle-inner">
+                <i class="sun-icon iconify" data-icon="feather:sun"></i>
+                <i class="moon-icon iconify" data-icon="feather:moon"></i>
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Hero-->
+    <div class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-vcentered">
+            <div class="column is-5 is-offset-1">
+              <div class="signup-caption">
+                <h1 class="title is-2 is-thin is-leading">Register</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verum
+                  hoc idem saepe faciamus.
+                </p>
+              </div>
+
+              <div class="signup-form">
+                <form>
+                  <div class="field">
+                    <label>Email Address</label>
+                    <div class="control has-icon">
+                      <input
+                        type="text"
+                        class="input"
+                        placeholder="Enter your email"
+                      />
+                      <div class="form-icon">
+                        <i class="iconify" data-icon="feather:mail"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label>Password</label>
+                    <div class="control has-icon">
+                      <input
+                        type="password"
+                        class="input"
+                        placeholder="Enter your password"
+                      />
+                      <div class="form-icon">
+                        <i class="iconify" data-icon="feather:lock"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="signup-conditions">
+                      <label class="f-switch is-secondary">
+                        <input type="checkbox" class="is-switch" />
+                        <i></i>
+                      </label>
+                      <span>I agree to the <a>Terms Of Service</a></span>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="buttons">
+                      <button class="button is-primary is-fullwidth raised">
+                        Sign Up
+                      </button>
+                    </div>
+
+                    <div class="login-link">
+                      <a href="/login">I already have an account</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="column is-6">
+              <img
+                class="signup-illustration"
+                src="/img/illustrations/signup.svg"
+                alt="Signup Illustration"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

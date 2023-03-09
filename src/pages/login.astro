@@ -1,0 +1,122 @@
+---
+import Layout from "../layouts/Minimal.astro";
+const title = "Login";
+---
+
+<Layout title={title}>
+  <div class="login-wrapper">
+    <!--Nav-->
+    <div class="login-nav">
+      <div class="container">
+        <div class="login-nav-inner">
+          <div class="start">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="/">
+                <img
+                  class="light-image-block"
+                  src="/img/logo/minimal.svg"
+                  alt=""
+                />
+                <img
+                  class="dark-image-block"
+                  src="/img/logo/minimal-white.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <div class="end">
+            <label class="theme-toggle">
+              <input
+                type="checkbox"
+                x-on:change="toggleTheme()"
+                :checked="$store.app.isDark"
+              />
+              <span class="theme-toggle-inner">
+                <i class="sun-icon iconify" data-icon="feather:sun"></i>
+                <i class="moon-icon iconify" data-icon="feather:moon"></i>
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Hero-->
+    <div class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <div class="columns is-vcentered">
+            <div class="column">
+              <div class="login-caption">
+                <h1 class="title is-2 is-thin is-leading">Sign In</h1>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Verum
+                  hoc idem saepe faciamus.
+                </p>
+              </div>
+
+              <div class="login-form" x-data="initLogin()">
+                <form>
+                  <div class="field">
+                    <label>Email Address</label>
+                    <div class="control has-icon">
+                      <input
+                        type="text"
+                        class="input"
+                        placeholder="Enter your email"
+                      />
+                      <div class="form-icon">
+                        <i class="iconify" data-icon="feather:mail"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label>Password</label>
+                    <div class="control has-icon">
+                      <input
+                        type="password"
+                        class="input"
+                        placeholder="Enter your password"
+                      />
+                      <div class="form-icon">
+                        <i class="iconify" data-icon="feather:lock"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="login-conditions">
+                      <label class="f-switch is-secondary">
+                        <input type="checkbox" class="is-switch" />
+                        <i></i>
+                      </label>
+                      <span>Remember me</span>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <div class="buttons">
+                      <button
+                        type="button"
+                        class="button is-primary is-fullwidth raised"
+                        x-bind:class="{
+                          'is-loading': isLoading,
+                        }"
+                        x-on:click="login()"
+                      >
+                        Login
+                      </button>
+                    </div>
+
+                    <div class="login-link">
+                      <a href="/login">Don't have an account?</a>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

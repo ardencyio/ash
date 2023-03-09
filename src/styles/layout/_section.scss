@@ -1,0 +1,66 @@
+/*
+    1. Section Base
+*/
+
+/* ==========================================================================
+1. Section Base
+========================================================================== */
+
+.section {
+  position: relative;
+  overflow: hidden;
+
+  &.is-overflown {
+    overflow: initial;
+  }
+
+  &.is-grey {
+    background: var(--section-bg-color-grey);
+  }
+
+  &.is-minimal {
+    background: var(--section-bg-color-grey);
+  }
+
+  &.has-pseudo-lines {
+    position: relative;
+
+    &:before {
+      content: "";
+      width: 2px;
+      height: 60px;
+      background: var(--wrap-border-color);
+      position: absolute;
+      top: 0;
+      #{$start-direction}: 0;
+      #{$end-direction}: 0;
+      margin: 0 auto;
+      transform: rotate(180deg);
+    }
+
+    &:after {
+      content: "";
+      width: 2px;
+      height: 60px;
+      background: var(--wrap-border-color);
+      position: absolute;
+      bottom: 0;
+      #{$start-direction}: 0;
+      #{$end-direction}: 0;
+      margin: 0 auto;
+      transform: rotate(180deg);
+    }
+  }
+
+  &.no-line-top {
+    &:before {
+      display: none !important;
+    }
+  }
+
+  &.no-line-bottom {
+    &:after {
+      display: none !important;
+    }
+  }
+}

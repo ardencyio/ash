@@ -1,0 +1,94 @@
+<div
+  class="megamenu"
+  x-bind:class="{
+    'is-active': megamenuOpened,
+    '': !megamenuOpened,
+  }"
+>
+  <!--Megamenu 1-->
+  <div x-show="openedMegamenu === 'megamenu-1'" class="megamenu-inner">
+    <button class="close-button" x-on:click="megamenuOpened = !megamenuOpened">
+      <i class="iconify" data-icon="lucide:arrow-left"></i>
+    </button>
+    <div class="container">
+      <div class="columns">
+        <div class="column is-4">
+          <div class="megamenu-block">
+            <div class="media">
+              <div class="media-left text-primary">
+                <i class="iconify" data-icon="ph:grid-four-duotone"></i>
+              </div>
+              <div class="media-content">
+                <h3 class="text-rainbow">Services</h3>
+                <p>
+                  ardency has multiple perspectives on technology from product strategy, engineering through investing and advisory.
+                </p>
+                <a class="action-link" href="/elements">
+                  <span>Explore</span>
+                  <i class="iconify" data-icon="lucide:arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-2">
+          <div class="megamenu-block has-margin">
+            <h4 class="text-rainbow">Focus</h4>
+            <ul>
+              <li>
+                <a
+                  href="/advisory"
+                  class="slide-link is-default"
+                >
+                  <span>Advisory</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/technology"
+                  class="slide-link is-default"
+                >
+                  <span>Incubator</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/investing"
+                  class="slide-link is-default"
+                >
+                  <span>Investing</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column is-6">
+          <div class="megamenu-block">
+            <div class="showcase">
+              <a href="/technology" class="showcase-item">
+                <img src="/img/menu/code.png" alt="showcase photo" />
+                <div class="showcase-content">
+                  <div>
+                    <h5 class="title is-6 is-narrow">ardency.io</h5>
+                    <p>Tech Incubator</p>
+                  </div>
+                  <i class="iconify" data-icon="ph:selection-duotone"></i>
+                </div>
+              </a>
+              <a href="/investing" class="showcase-item">
+                <img src="/img/menu/avc.png" alt="showcase photo" />
+                <div class="showcase-content">
+                  <div>
+                    <h5 class="title is-6 is-narrow">ardency VC</h5>
+                    <p>Startup funding</p>
+                  </div>
+                  <i class="iconify" data-icon="ph:layout-duotone"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

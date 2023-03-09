@@ -1,0 +1,289 @@
+/*
+    1. Field
+    2. Control
+    3. Input
+    4. Textarea
+*/
+
+/* ==========================================================================
+1. Field
+========================================================================== */
+
+.field {
+  > label,
+  .label {
+    font-family: var(--font);
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: var(--input-label-color);
+    margin-bottom: 0;
+  }
+
+  &.has-addons {
+    .control:last-child:not(:only-child) .button {
+      border-bottom-#{$end-direction}-radius: 4px;
+      border-top-#{$end-direction}-radius: 4px;
+
+      &.is-static {
+        background: var(--wrap-muted-color);
+        border-color: var(--input-base-border-color);
+        color: var(--medium-text);
+      }
+    }
+
+    .control:first-child:not(:only-child) .button {
+      border-bottom-#{$start-direction}-radius: 4px;
+      border-top-#{$start-direction}-radius: 4px;
+
+      &.is-static {
+        background: var(--wrap-muted-color);
+        border-color: var(--input-base-border-color);
+        color: var(--medium-text);
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+2. Control
+========================================================================== */
+
+.control {
+  &.has-icon {
+    .form-icon {
+      position: absolute;
+      #{$start-direction}: 0;
+      top: 0;
+      height: 44px;
+      width: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--input-form-icon-color);
+      transition: color 0.3s;
+
+      &.is-medium {
+        height: 46px;
+        width: 46px;
+      }
+
+      &.is-large {
+        height: 54px;
+        width: 54px;
+      }
+
+      svg {
+        height: 18px;
+        width: 18px;
+        stroke-width: 1.6px;
+        transition: stroke 0.3s;
+      }
+    }
+
+    .input,
+    select {
+      padding-#{$start-direction}: 40px;
+
+      &.is-medium {
+        padding-#{$start-direction}: 46px;
+      }
+
+      &.is-large {
+        padding-#{$start-direction}: 54px;
+      }
+
+      &:focus {
+        ~ .form-icon {
+          color: var(--primary);
+        }
+      }
+
+      &.is-success {
+        ~ .validation-icon,
+        ~ .form-icon {
+          color: var(--success) !important;
+        }
+      }
+
+      &.is-danger {
+        ~ .validation-icon,
+        ~ .form-icon {
+          color: var(--danger) !important;
+        }
+      }
+    }
+
+    &.has-validation {
+      .validation-icon {
+        position: absolute;
+        #{$end-direction}: 0;
+        top: 0;
+        height: 44px;
+        width: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--input-form-icon-color);
+        transition: color 0.3s;
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  &.is-loading {
+    &::after {
+      #{$end-direction}: 0.825em;
+      top: 0.825em;
+    }
+
+    .select {
+      opacity: 0.8;
+      pointer-events: none;
+
+      &::after {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+3. Input & Select
+========================================================================== */
+
+.input {
+  font-family: var(--font);
+  transition: all 0.3s;
+  box-shadow: none;
+  color: var(--input-base-color);
+  background: var(--input-base-bg-color);
+  border-color: var(--input-base-border-color);
+
+  &:not(.is-medium):not(.is-large) {
+    height: 44px;
+  }
+
+  &:hover {
+    border-color: var(--input-base-border-color-hover);
+  }
+
+  &:focus,
+  &:focus-within {
+    box-shadow: var(--light-box-shadow);
+    border-color: var(--input-base-border-color-hover);
+
+    ~ .form-icon {
+      color: var(--primary) !important;
+    }
+  }
+
+  &[disabled] {
+    background: var(--wrap-muted-color);
+    border-color: var(--wrap-muted-color);
+  }
+
+  &::placeholder {
+    color: var(--input-placeholder-color);
+  }
+
+  ~ .form-icon {
+    transition: color 0.3s;
+  }
+}
+
+.select {
+  &:not(.is-medium):not(.is-large) {
+    height: 44px;
+
+    select {
+      height: 44px;
+      background: var(--input-base-bg-color);
+      border-color: var(--input-base-border-color);
+      color: var(--input-base-color);
+      box-shadow: none;
+      transition: all 0.3s;
+
+      &[disabled] {
+        background: var(--wrap-muted-color);
+        border-color: var(--wrap-muted-color);
+      }
+
+      &:focus {
+        box-shadow: var(--light-box-shadow);
+      }
+    }
+  }
+
+  &:hover {
+    select {
+      border-color: var(--input-base-border-color-hover);
+    }
+  }
+
+  &:not(.is-multiple):not(.is-loading) {
+    &::after {
+      border-color: var(--light-text) !important;
+      transform: rotate(-45deg) scale(0.85);
+      transition: transform 0.3s;
+    }
+
+    &:focus-within {
+      select {
+        box-shadow: var(--light-box-shadow);
+      }
+
+      &::after {
+        border-color: var(--light-text);
+        transform: rotate(-225deg) scale(0.85);
+        margin-top: -0.175em;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+4. Textarea
+========================================================================== */
+
+.textarea {
+  transition: all 0.3s;
+  box-shadow: none;
+  color: var(--input-base-color);
+  background: var(--input-base-bg-color);
+  border-color: var(--input-base-border-color);
+
+  &:hover {
+    border-color: var(--input-base-border-color-hover);
+  }
+
+  &:focus {
+    box-shadow: var(--light-box-shadow);
+    border-color: var(--input-base-border-color-hover);
+  }
+
+  &::placeholder {
+    color: var(--input-placeholder-color);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .field {
+    &.is-grouped {
+      &.is-responsive {
+        display: block;
+
+        .control {
+          margin-#{$end-direction}: 0;
+
+          .button {
+            width: 100%;
+          }
+
+          &:not(:last-child) {
+            margin-bottom: 0.75rem;
+          }
+        }
+      }
+    }
+  }
+}

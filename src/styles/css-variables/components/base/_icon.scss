@@ -1,0 +1,9 @@
+:root {
+  --icon-bg-color: var(--widget-grey);
+  --icon-color: var(--medium-text);
+}
+
+.is-dark {
+  --icon-bg-color: var(--night-light-12);
+  --icon-color: var(--light-text);
+}

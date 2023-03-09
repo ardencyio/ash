@@ -1,0 +1,38 @@
+---
+import { CollectionEntry, getCollection } from 'astro:content';
+import Layout from "../../layouts/Default.astro";
+
+export async function getStaticPaths() {
+	const posts = await getCollection('blog');
+	return posts.map((post) => ({
+		params: { slug: post.slug },
+		props: post,
+	}));
+}
+
+type Props = CollectionEntry<'blog'>;
+const post = Astro.props;
+const { Content } = await post.render();
+---
+
+<Layout {...post.data}>
+
+	<div class="section">
+		<div class="container">
+			<div class="has-text-centered py-12">
+				<span class="tag is-primary is-curved is-outlined mb-2">Block V4</span>
+				<h2 class="title is-3">{post.data.title}</h2>
+				<p class="subtitle is-5 text-medium">
+					{post.data.description}
+				</p>
+			</div>
+		
+			<!-- Content block v4 -->
+			<div class="pb-12">
+				<div class="content">
+					<Content />
+				</div>
+			</div>
+		</div>
+	</div>
+</Layout>

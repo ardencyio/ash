@@ -1,0 +1,97 @@
+<div>
+  <div class="columns is-multiline">
+    <div class="column is-4">
+      <div
+        class="dropdown"
+        x-data="initDropdown()"
+        :class="isActive && 'is-active'"
+        @click.away="close()"
+      >
+        <div class="dropdown-trigger">
+          <button
+            class="button"
+            aria-haspopup="true"
+            aria-controls="dropdown-menu"
+            @click="open()"
+          >
+            <span>Dropdown</span>
+            <span class="icon is-small">
+              <i class="iconify" data-icon="lucide:chevron-down"></i>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+          <div class="dropdown-content">
+            <a class="dropdown-item"> Projects</a>
+            <a href="#" class="dropdown-item is-active"> Notifications</a>
+            <a href="#" class="dropdown-item"> Reports</a>
+            <hr class="dropdown-divider" />
+            <a href="#" class="dropdown-item">Settings</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-4">
+      <div
+        class="dropdown"
+        x-data="initDropdown()"
+        :class="isActive && 'is-active'"
+        @click.away="close()"
+      >
+        <div class="dropdown-trigger">
+          <button
+            class="button is-form"
+            aria-haspopup="true"
+            aria-controls="dropdown-menu"
+            @click="open()"
+          >
+            <span>Dropdown</span>
+            <span class="icon is-small">
+              <i class="iconify" data-icon="lucide:chevron-down"></i>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+          <div class="dropdown-content">
+            <a class="dropdown-item"> Projects</a>
+            <a href="#" class="dropdown-item is-active"> Notifications</a>
+            <a href="#" class="dropdown-item"> Reports</a>
+            <hr class="dropdown-divider" />
+            <a href="#" class="dropdown-item">Settings</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column is-4">
+      <div
+        class="dropdown is-right"
+        x-data="initDropdown()"
+        :class="isActive && 'is-active'"
+        @click.away="close()"
+      >
+        <div class="dropdown-trigger">
+          <button
+            class="button is-form"
+            aria-haspopup="true"
+            aria-controls="dropdown-menu"
+            @click="open()"
+          >
+            <span>Dropdown</span>
+            <span class="icon is-small">
+              <i class="iconify" data-icon="lucide:chevron-down"></i>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+          <div class="dropdown-content">
+            <a class="dropdown-item"> Projects</a>
+            <a href="#" class="dropdown-item is-active"> Notifications</a>
+            <a href="#" class="dropdown-item">Reports</a>
+            <hr class="dropdown-divider" />
+            <a href="#" class="dropdown-item">Settings</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

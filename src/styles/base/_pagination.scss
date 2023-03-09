@@ -1,0 +1,45 @@
+.pagination {
+  font-family: var(--font);
+
+  .pagination-previous, .pagination-next {
+    background: var(--button-base-bg-color);
+    border-color: var(--button-base-border-color);
+    color: var(--button-base-color);
+    font-size: 0.95rem;
+    min-width: 40px;
+    min-height: 40px;
+    transition: color .3s, border-color .3s;
+
+    &:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+  }
+
+  .pagination-link {
+    background: var(--button-base-bg-color);
+    border-color: var(--button-base-border-color);
+    color: var(--button-base-color);
+    font-family: var(--font);
+    font-size: 0.95rem;
+
+    &:hover {
+      border-color: var(--button-base-border-color-hover);
+    }
+
+    &.is-current {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: var(--white);
+      box-shadow: var(--primary-box-shadow);
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .pagination {
+    .pagination-next, .pagination-previous {
+      max-width: 40px;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+/*! _autocomplete.scss | Bold | Css ninja 2020-2021 */
+
+/*
+    1. Autocomplete base
+*/
+
+/* ==========================================================================
+1. Autocomplete base
+========================================================================== */
+
+.autocomplete {
+  background: var(--card-bg-color);
+  z-index: 1000;
+  font: 14px/22px var(--font);
+  overflow: auto;
+  border-radius: 0.65rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  border: 1px solid var(--card-border-color);
+
+  * {
+    font-family: var(--font);
+  }
+
+  > div {
+    &:hover:not(.group):not(.selected) {
+      .autocomplete-item {
+        background: var(--wrap-muted-color);
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 0.25rem;
+    }
+
+    :not(.selected) {
+      span {
+        color: var(--light-text);
+      }
+    }
+
+    &.selected {
+      cursor: pointer;
+
+      span {
+        color: var(--white);
+      }
+
+      .autocomplete-item {
+        background: var(--primary);
+        color: var(--white);
+      }
+    }
+  }
+
+  .group {
+    .autocomplete-group {
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--light-text);
+      margin: 0.5rem 0 0.25rem 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .autocomplete-item {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &.is-custom {
+      display: flex;
+      align-items: center;
+
+      .autocomplete-image {
+        display: block;
+        height: 1.5rem;
+        width: 1.5rem;
+        min-width: 1.5rem;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-#{$end-direction}: 0.5rem;
+      }
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 0.5rem !important;
+    background: rgba(0, 0, 0, 0.2) !important;
+  }
+
+  &.autocomplete-spaced {
+    margin-top: 0.5rem;
+    max-height: 180px !important;
+  }
+
+  &.autocomplete-grouped {
+    margin-top: 0.5rem;
+    max-height: 195px !important;
+  }
+
+  &.autocomplete-custom {
+    margin-top: 0.5rem;
+    max-height: 190px !important;
+  }
+}

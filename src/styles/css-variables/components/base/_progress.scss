@@ -1,0 +1,7 @@
+:root {
+  --progress-track-bg-color: #ededed;
+}
+
+.is-dark {
+  --progress-track-bg-color: var(--night-light-16);
+}

@@ -1,0 +1,139 @@
+/*
+    1. Colors
+    2. Types
+*/
+
+/* ==========================================================================
+1. Colors
+========================================================================== */
+
+.hero {
+  background: var(--hero-bg-color);
+
+  &.is-grey {
+    background: var(--hero-grey-bg-color);
+  }
+}
+
+/* ==========================================================================
+2. Types
+========================================================================== */
+
+.hero {
+  overflow: hidden;
+  
+  &.is-side {
+    &.is-right,
+    &.is-left {
+      .buttons {
+        .button {
+          min-width: 130px;
+        }
+      }
+    }
+  }
+
+  &.is-center {
+    text-align: center;
+
+    .hero-image-center {
+      display: block;
+      margin: 0 auto;
+      max-height: 380px;
+      width: auto;
+    }
+
+    .buttons {
+      justify-content: center;
+
+      .button {
+        min-width: 130px;
+      }
+    }
+  }
+
+  &.has-top-bg {
+    position: relative;
+
+    .top-bg {
+      position: absolute;
+      top: 0;
+      #{$end-direction}: 0;
+      display: block;
+      width: 80%;
+      height: auto;
+      z-index: 0;
+    }
+
+    .top-bg-alt {
+      position: absolute;
+      top: 0;
+      #{$start-direction}: 0;
+      display: block;
+      width: 80%;
+      height: auto;
+      z-index: 0;
+    }
+  }
+
+  .hero-foot {
+    .tabs {
+      ul li {
+        padding: 0 1rem;
+
+        img {
+          display: block;
+          width: 110px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+.is-dark {
+  .hero {
+    .hero-foot {
+      img {
+        filter: invert(1);
+      }
+    }
+
+    &.has-top-bg {
+      .top-bg,
+      .top-bg-alt {
+        filter: invert(1);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .hero {
+    &.is-side {
+      .title,
+      .subtitle {
+        text-align: center;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .hero {
+    &.is-side {
+      .title,
+      .subtitle {
+        text-align: center;
+      }
+
+      .buttons {
+        justify-content: center;
+      }
+    }
+  }
+}

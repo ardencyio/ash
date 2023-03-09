@@ -1,0 +1,64 @@
+/*
+    1. Card
+    2. Box
+*/
+
+/* ==========================================================================
+1. Card
+========================================================================== */
+
+.card {
+  background: var(--card-bg-color);
+  border: 1px solid var(--card-border-color);
+  box-shadow: none;
+  border-radius: 0.75rem;
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+
+  &.has-shadow {
+    box-shadow: var(--light-box-shadow);
+  }
+
+  &.has-shadow-hover:hover {
+    box-shadow: var(--light-box-shadow);
+  }
+
+  &.is-bordered {
+    border: 3px solid var(--primary);
+  }
+}
+
+.card-footer {
+  border-color: var(--card-border-color);
+}
+
+.card-footer-item {
+  transition: background-color 0.3s;
+
+  &:hover {
+    background: var(--wrap-muted-color);
+  }
+
+  &:not(:last-child) {
+    border-color: var(--card-border-color);
+  }
+}
+
+/* ==========================================================================
+2. Box
+========================================================================== */
+
+.box {
+  background: var(--card-bg-color);
+  border: 1px solid var(--card-border-color);
+  box-shadow: none;
+  border-radius: 0.75rem;
+  transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    box-shadow: var(--light-box-shadow);
+  }
+
+  &.is-bordered {
+    border: 3px solid var(--primary);
+  }
+}

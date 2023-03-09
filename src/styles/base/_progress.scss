@@ -1,0 +1,50 @@
+/* ==========================================================================
+Progress Bar
+========================================================================== */
+
+.progress {
+  margin-bottom: 0;
+
+  &::-webkit-progress-value {
+    border-radius: 50px;
+    transition: width .3s;
+  }
+
+  &::-webkit-progress-bar {
+    background-color: var(--progress-track-bg-color);
+  }
+
+  &::-moz-progress-bar {
+    border-radius: 50px;
+  }
+
+  &::-ms-fill {
+    border-radius: 50px;
+  }
+
+  &.is-smaller {
+    height: 0.5rem !important;
+  }
+
+  &.is-tiny {
+    height: 0.35rem !important;
+  }
+
+  &.is-micro {
+    height: 0.2rem !important;
+  }
+
+  &.is-secondary {
+    &::-webkit-progress-value {
+      background-color: var(--secondary);
+    }
+
+    &::-moz-progress-bar {
+      background-color: var(--secondary);
+    }
+
+    &::-ms-fill {
+      background-color: var(--secondary);
+    }
+  }
+}

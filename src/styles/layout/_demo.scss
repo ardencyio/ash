@@ -1,0 +1,75 @@
+.dual-layout {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+
+  .demo-section {
+    position: relative;
+    flex-grow: 2;
+    padding-#{$end-direction}: 3rem;
+
+    .demo-block + .demo-block {
+      margin-top: 4rem;
+      padding-top: 4rem;
+      border-top: 1px solid var(--wrap-border-color);
+    }
+  }
+
+  .demo-toc {
+    position: relative;
+    width: 260px;
+    min-width: 260px;
+    padding-#{$start-direction}: 2rem;
+    //border-#{$start-direction}: 1px solid var(--wrap-border-color);
+
+    > div {
+      position: sticky;
+      top: 100px;
+    }
+
+    .toc-title {
+      font-family: var(--font);
+      font-size: 0.8rem;
+      color: var(--title-color);
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    ul {
+      li {
+        a {
+          position: relative;
+          display: flex;
+          align-items: center;
+          width: 100%;
+          min-height: 2rem;
+          font-family: var(--font);
+          font-size: 0.9rem;
+          border-#{$end-direction}: 2px solid var(--wrap-border-color);
+          color: var(--light-text);
+          transition: color 0.3s;
+
+          &:hover {
+            color: var(--medium-text);
+          }
+
+          &.is-active {
+            color: var(--primary);
+
+            &::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              #{$end-direction}: -2px;
+              height: 100%;
+              width: 3px;
+              border-radius: 1rem;
+              background: var(--primary);
+            }
+          }
+        }
+      }
+    }
+  }
+}

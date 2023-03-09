@@ -1,0 +1,48 @@
+---
+// module imports
+import Layout from "../../layouts/Default.astro";
+import TableBlockOne from "../../components/blocks/table/TableBlockOne.astro";
+import DoubleCta from "../../components/DoubleCta.astro";
+import FormattedDate from "../../components/Date.astro";
+import Post from "../../components/blocks/posts/Post.astro";
+
+// library imports
+import { getCollection } from "astro:content";
+
+// scripts
+const title = "Blog";
+const posts = (await getCollection("blog")).sort(
+  (a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+);
+---
+
+<Layout title={title}>
+  <div id="content-start" class="section">
+    <div class="container">
+      <div class="has-text-centered py-12">
+        <span class="tag is-primary is-curved is-outlined mb-2">Blog</span>
+        <h2 class="title is-3">Latest Musings</h2>
+        <p class="subtitle is-5 text-medium">
+          Stay tuned to our new feed and don't miss anything
+        </p>
+      </div>
+
+      <!-- Posts block v1 -->
+      <div class="pb-12">
+        <div class="posts-block-v1">
+          <div class="columns is-multiline b-columns-half-tablet-p">
+            {
+              posts.map((post) => (
+                <Post
+                  title={post.data.title}
+                  description={post.data.description}
+                  slug={post.slug}
+                />
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

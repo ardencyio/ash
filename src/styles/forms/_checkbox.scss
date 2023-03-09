@@ -1,0 +1,128 @@
+.checkbox,
+.radio {
+  position: relative;
+  display: inline-block;
+
+  input {
+    position: absolute;
+    top: 0;
+    #{$start-direction}: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+    opacity: 0;
+
+    &:checked {
+      ~ .checkbox-inner,
+      ~ .radio-inner {
+        .checkbox-wrap,
+        .radio-wrap {
+          .checkbox-box,
+          .radio-box {
+            border-color: var(--primary);
+
+            svg {
+              transform: scale(1);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .checkbox-inner,
+  .radio-inner {
+    display: flex;
+    align-items: center;
+
+    .checkbox-wrap,
+    .radio-wrap {
+      margin-#{$end-direction}: 0.5rem;
+
+      .checkbox-box,
+      .radio-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 1.5rem;
+        width: 1.5rem;
+        color: var(--primary);
+        background: var(--input-base-bg-color);
+        border: 2px solid var(--input-base-border-color);
+        transition: border-color 0.3s;
+
+        svg {
+          transform: scale(0);
+          stroke-width: 4px;
+          transition: transform 0.15s;
+        }
+      }
+
+      .checkbox-box {
+        svg {
+          height: 0.8rem;
+          width: 0.8rem;
+        }
+      }
+
+      .radio-box {
+        svg {
+          height: 0.5rem;
+          width: 0.5rem;
+        }
+      }
+    }
+
+    .checkbox-label,
+    .radio-label {
+      font-family: var(--font);
+      font-size: 0.95rem;
+      color: var(--medium-text);
+    }
+  }
+
+  + .checkbox,
+  + .radio {
+    margin-#{$start-direction}: 2rem;
+  }
+
+  &.is-round {
+    .checkbox-inner,
+    .radio-inner {
+      .checkbox-wrap,
+      .radio-wrap {
+        .checkbox-box,
+        .radio-box {
+          border-radius: 0.25rem;
+        }
+      }
+    }
+  }
+
+  &.is-curve {
+    .checkbox-inner,
+    .radio-inner {
+      .checkbox-wrap,
+      .radio-wrap {
+        .checkbox-box,
+        .radio-box {
+          border-radius: 0.5rem;
+        }
+      }
+    }
+  }
+
+  &.is-circle {
+    .checkbox-inner,
+    .radio-inner {
+      .checkbox-wrap,
+      .radio-wrap {
+        .checkbox-box,
+        .radio-box {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}

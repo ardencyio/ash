@@ -1,0 +1,36 @@
+:root {
+  --button-base-color: var(--dark-text);
+  --button-base-bg-color: var(--white);
+  --button-base-border-color: var(--border);
+  --button-base-border-color-hover: var(--border-hover);
+  --button-base-shadow: var(--light-box-shadow);
+  --button-light-color: var(--dark-text);
+  --button-light-color-inverted: var(--white);
+  --button-light-bg-color: var(--widget-grey);
+  --button-light-bg-color-inverted: var(--white);
+  --button-light-border-color: var(--widget-grey);
+  --button-light-border-color-inverted: var(--white);
+  --button-primary-color: var(--white);
+  --button-primary-color-inverted: var(--primary);
+  --button-primary-bg-color: var(--primary);
+  --button-primary-bg-color-hover: var(--primary-light-4);
+  --button-primary-border-color: var(--primary);
+  --button-primary-border-color-hover: var(--primary-light-4);
+}
+
+.is-dark {
+  --button-base-color: var(--light-text);
+  --button-base-bg-color: var(--night-light-14);
+  --button-base-border-color: var(--night-light-18);
+  --button-base-border-color-hover: var(--night-light-30);
+  --button-primary-color: var(--dark-text);
+  --button-primary-color-inverted: var(--white);
+  --button-primary-bg-color: var(--white);
+  --button-primary-bg-color-hover: var(--white);
+  --button-primary-border-color: var(--white);
+  --button-primary-border-color-hover: var(--white);
+  --button-light-color: var(--white-smoke);
+  --button-light-bg-color: var(--night-light-10);
+  --button-light-border-color: var(--night-light-10);
+  --button-light-color-inverted-hover: var(--dark-text);
+}

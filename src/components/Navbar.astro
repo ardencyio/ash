@@ -1,0 +1,113 @@
+---
+import Megamenu from '../components/Megamenu.astro'
+---
+
+
+<nav
+  class="navbar is-transparent is-fixed-top is-fade"
+  x-data="initNavbar()"
+  x-init="initScrollAnchors()"
+  x-on:mouseleave="megamenuOpened = false"
+  x-on:scroll.window="scroll()"
+  :class="{
+        'is-scrolled': scrolled,
+        '': !scrolled,
+        'is-solid': mobileOpen || megamenuOpened,
+        '': !mobileOpen || megamenuOpened
+    }"
+>
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img
+          class="navbar-logo light-image-block"
+          src="/img/logo/ardency.svg"
+          alt="Logo"
+        />
+        <img
+          class="navbar-logo dark-image-block"
+          src="/img/logo/ardency-white.svg"
+          alt="Logo"
+        />
+      </a>
+      <div class="navbar-burger" @click="openMobileMenu()">
+        <div class="menu-toggle">
+          <div
+            class="icon-box-toggle is-navbar"
+            :class="{
+                'active': mobileOpen,
+                '': !mobileOpen
+            }"
+          >
+            <div class="rotate">
+              <i class="icon-line-top"></i>
+              <i class="icon-line-center"></i>
+              <i class="icon-line-bottom"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="navbar-menu b-centered-mobile b-centered-tablet-p"
+      :class="{
+          'is-active': mobileOpen,
+          '': !mobileOpen
+      }"
+    >
+      <div class="navbar-start">
+        <!-- Dropdown -->
+        <div
+          class="navbar-item has-dropdown is-hoverable"
+          x-data="{ open: false }"
+          @click.away="open = false"
+        >
+          <a
+            x-on:mouseover="megamenuOpened = false, openedMegamenu = ''"
+            @click="open = !open"
+            class="navbar-link is-flex is-align-items-center is-arrowless j-center-tablet-p j-center-mobile"
+          >
+            About
+            <span
+              class="caret px-1 is-flex is-justify-content-center is-align-items-center"
+            >
+              <i class="iconify" data-icon="lucide:chevron-down"></i>
+            </span>
+          </a>
+          <div
+            class="navbar-dropdown is-boxed"
+            :class="open ? 'is-active' : ''"
+          >
+            <a class="navbar-item" href="/technology"> Incubator </a>
+            <a class="navbar-item" href="/advisory"> Advisory </a>
+            <a class="navbar-item" href="/investing"> Investing </a>
+          </div>
+        </div>
+        <a
+          class="navbar-item"
+          x-on:mouseover="megamenuOpened = true, openedMegamenu = 'megamenu-1'"
+        >
+          <span>About Us</span>
+          <i class="iconify caret" data-icon="lucide:chevron-down"></i>
+        </a>
+        <a class="navbar-item" href="/blog"> Blog </a>
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item is-mobile-centered">
+          <label class="theme-toggle">
+            <input
+              type="checkbox"
+              x-on:change="toggleTheme()"
+              :checked="$store.app.isDark"
+            />
+            <span class="theme-toggle-inner">
+              <i class="sun-icon iconify" data-icon="feather:sun"></i>
+              <i class="moon-icon iconify" data-icon="feather:moon"></i>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <Megamenu />
+</nav>

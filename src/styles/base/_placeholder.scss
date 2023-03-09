@@ -1,0 +1,39 @@
+.placeholder-outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 3rem 0;
+}
+
+.page-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .page-placeholder-inner {
+    text-align: center;
+    padding-top: 2rem;
+
+    img {
+      display: block;
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto 1rem auto;
+    }
+
+    p {
+      font-size: 1rem;
+      max-width: 540px;
+      margin: 0 auto 1rem auto;
+      color: var(--medium-text);
+    }
+
+    .buttons {
+      .button {
+        min-height: 48px;
+        min-width: 130px;
+      }
+    }
+  }
+}

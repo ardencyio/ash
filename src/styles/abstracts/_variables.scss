@@ -1,0 +1,27 @@
+/*
+    1. Base variable overrides
+    2. Font variable overrides
+    3. Layout variable overrides
+*/
+
+/* ==========================================================================
+1. Base variable overrides
+========================================================================== */
+
+$body-color: var(--body-color);
+$border: var(--border);
+
+/* ==========================================================================
+2. Font variable overrides
+========================================================================== */
+
+$font: var(--font);
+$font-alt: var(--font-alt);
+$font-monospace: var(--font-monospace);
+
+/* ==========================================================================
+3. Layout variable overrides
+========================================================================== */
+
+$fullhd-enabled: false;
+$body-size: var(--font-size);

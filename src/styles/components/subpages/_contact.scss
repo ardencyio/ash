@@ -1,0 +1,85 @@
+.contact-nav {
+  position: absolute;
+  top: 0;
+  #{$start-direction}: 0;
+  height: 70px;
+  width: 100%;
+  padding: 0 1rem;
+  z-index: 3;
+
+  .brand {
+    height: 70px;
+    display: flex;
+    align-items: center;
+
+    .logo {
+      display: block;
+      max-width: 40px;
+    }
+  }
+}
+
+.contact-hero {
+  .hero-body {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.card-form {
+  padding: 3rem;
+  max-width: 440px;
+  margin: 0 auto;
+  overflow: visible;
+  box-shadow: var(--light-box-shadow);
+
+  &.card-form-horizontal {
+    display: flex;
+    max-width: 840px;
+    border-radius: 1.5rem;
+
+    .card-form-left {
+      width: 55%;
+      padding: 2rem;
+    }
+
+    .card-form-right {
+      width: 45%;
+      padding: 2rem;
+    }
+  }
+
+  .title {
+    &.is-1 {
+      line-height: 1;
+    }
+  }
+
+  .bottom-link {
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: var(--primary);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-hero {
+    .card-form {
+      padding: 2rem;
+    }
+  }
+
+  .card-form {
+    &.card-form-horizontal {
+      flex-direction: column;
+      padding: 1rem;
+
+      .card-form-left,
+      .card-form-right {
+        width: 100%;
+      }
+    }
+  }
+}
+

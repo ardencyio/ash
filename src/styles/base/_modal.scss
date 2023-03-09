@@ -1,0 +1,64 @@
+.modal {
+  transition: all 0.5s;
+
+  .modal-content {
+    transition: all 0.4s;
+    opacity: 0;
+    animation-delay: 0.5s;
+  }
+
+  &.is-active {
+    .modal-content {
+      animation: fadeInDown 0.5s forwards;
+    }
+  }
+
+  &.is-large {
+    .modal-content {
+      width: 100%;
+      max-width: 640px;
+
+      .modal-card {
+        width: 100%;
+      }
+    }
+  }
+
+  &.is-medium {
+    .modal-content {
+      width: 100%;
+      max-width: 540px;
+
+      .modal-card {
+        width: 100%;
+      }
+    }
+  }
+
+  &.is-small {
+    .modal-content {
+      width: 100%;
+      max-width: 420px;
+
+      .modal-card {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .modal.modal-lg {
+    .modal-card,
+    .modal-content {
+      width: 800px !important;
+    }
+  }
+
+  .modal.modal-sm {
+    .modal-card,
+    .modal-content {
+      width: 400px !important;
+    }
+  }
+}

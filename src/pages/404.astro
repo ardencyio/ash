@@ -1,0 +1,81 @@
+---
+import Layout from "../layouts/Minimal.astro";
+const title = "Error 404";
+---
+
+<Layout title={title}>
+  <div class="hero is-fullheight is-grey error-hero">
+    <!--Nav-->
+    <div class="error-nav">
+      <div class="container">
+        <div class="error-nav-inner">
+          <div class="start">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="/">
+                <img
+                  class="light-image-block"
+                  src="/img/logo/minimal.svg"
+                  alt=""
+                />
+                <img
+                  class="dark-image-block"
+                  src="/img/logo/minimal-white.svg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <div class="end">
+            <label class="theme-toggle">
+              <input
+                type="checkbox"
+                x-on:change="toggleTheme()"
+                :checked="$store.app.isDark"
+              />
+              <span class="theme-toggle-inner">
+                <i class="sun-icon iconify" data-icon="feather:sun"></i>
+                <i class="moon-icon iconify" data-icon="feather:moon"></i>
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-body">
+      <div class="container">
+        <div class="error-wrapper">
+          <div class="error-wrapper-inner">
+            <div class="error-image">
+              <img
+                class="light-image-block"
+                src="/img/illustrations/404.svg"
+                alt="Error image"
+              />
+              <img
+                class="dark-image-block"
+                src="/img/illustrations/404-dark.svg"
+                alt="Error image"
+              />
+            </div>
+            <div class="error-content">
+              <h2 class="title is-3 is-leading">
+                <span>Page Not Found</span>
+              </h2>
+              <p class="paragraph rem-115 mx-auto max-w-4 mb-4">
+                Oops, something went wrong and we couldn't find that page.
+                Please try again later.
+              </p>
+              <div class="buttons is-centered">
+                <a href="/home-3" class="button is-primary raised"
+                  >Homepage</a
+                >
+                <a class="button is-solid">Back</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
