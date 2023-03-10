@@ -1,61 +1,30 @@
-# 👋 Minimal
-> Minimal is a landing page kit UI template built by [cssninjaStudio](https://cssninja.io).
+# G R O U P
 
-[![cssninja-discord](https://img.shields.io/discord/785473098069311510?label=join%20us%20on%20discord&color=6944EC)](https://go.cssninja.io/discord)
+Group website for ardency businesses ( `funding`: `ardency.vc`) and ( `tech`: `ardency.io`, `ardency.sh`)
 
-## ✌️ preview
+## Features
 
-Check out the live demo by clicking [here](https://minimal.cssninja.io/). 
-Minimal is built with [Bulma](https://bulma.io) and [Alpine JS](https://github.com/alpinejs/alpine).
+- Astro v2.x
+- Nodejs v19.x
+- Bulma v0.9.x
+- Alpine v3.x
 
-## 👍 Features
+## Usage
 
-* Astro v1.x
-* Nodejs v16.x
-* Bulma v0.9.x
-* Alpine v3.x
-
-## 👌 Usage
-
-1. Install Depedencies
+### Install Depedencies
 
 ```sh
 pnpm i
 ```
 
-2. Run in dev mode
+### Run in dev mode
 
 ```sh
 pnpm dev
 ```
 
-3. Or build source
+### build source
 
 ```sh
 pnpm build
 ```
-
-## 🍔 Issues
-
-If you've found an issue or a bug, you can report it in the issues section of this repository. Please try to follow these simple guidelines to report your issue:
-
-* Issue definition
-* Expected behaviour
-* Actual behaviour
-* steps to reproduce
-* Already tried fixes (if relevant)
-
-## 🎉 More
-
-Get access to the [documentation](https://docs.cssninja.io/minimal).
-
-You liked Minimal? Check also our Envato portfolio [Css Ninja on Themeforest](https://themeforest.net/user/cssninjastudio/portfolio).
-
-Find more premium app and website templates on [Css Ninja](https://cssninja.io/).
-
-## 🚀 About Us
-
-Css Ninja is a web design studio. We build handcrafted and polished templates that will give some hype to your startup or to your next project.
-
-
-
