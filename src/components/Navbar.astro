@@ -57,33 +57,7 @@ import Megamenu from '../components/Megamenu.astro'
     >
       <div class="navbar-start">
         <!-- Dropdown -->
-        <div
-          class="navbar-item has-dropdown is-hoverable"
-          x-data="{ open: false }"
-          @click.away="open = false"
-        >
-          <a
-            x-on:mouseover="megamenuOpened = false, openedMegamenu = ''"
-            @click="open = !open"
-            class="navbar-link is-flex is-align-items-center is-arrowless j-center-tablet-p j-center-mobile"
-          >
-            About
-            <span
-              class="caret px-1 is-flex is-justify-content-center is-align-items-center"
-            >
-              <i class="iconify" data-icon="lucide:chevron-down"></i>
-            </span>
-          </a>
-          <div
-            class="navbar-dropdown is-boxed"
-            :class="open ? 'is-active' : ''"
-          >
-            <a class="navbar-item" href="/technology"> Incubator </a>
-            <a class="navbar-item" href="/advisory"> Advisory </a>
-            <a class="navbar-item" href="/investing"> Investing </a>
-          </div>
-        </div>
-        <a
+       <a
           class="navbar-item"
           x-on:mouseover="megamenuOpened = true, openedMegamenu = 'megamenu-1'"
         >
