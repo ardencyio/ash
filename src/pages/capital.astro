@@ -1,0 +1,396 @@
+---
+import Layout from "../layouts/Default.astro";
+import DoubleCta from "../components/DoubleCta.astro";
+const title = "Home";
+---
+
+<Layout title={title}>
+  <div class="hero is-fullheight is-center has-top-bg">
+    <img class="top-bg-alt" src="/img/bg/top-bg-alt.svg" alt="" />
+
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered mt-6">
+          <div class="column">
+            <h1 class="title is-1 is-bold">Building the future of Africa</h1>
+            <p
+              class="subtitle is-5 mx-auto max-w-5 b-centered-tablet-p text-medium"
+            >
+              We seek to invest in and support Africa's most promising
+              technology startups
+            </p>
+            <div class="buttons">
+              <a class="button is-primary is-medium is-raised">Discover</a>
+              <a class="button is-primary is-outlined is-medium">Free Trial</a>
+            </div>
+            <img
+              class="hero-image-center mx-auto py-4 inverted-filter"
+              src="/img/illustrations/skyline.svg"
+              alt="Hero image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="has-text-centered pb-6">
+        <span class="tag is-primary is-curved is-outlined is-thick mb-2"
+          >Strong Ideals </span
+        >
+        <h2 class="title is-3">Impact Driven</h2>
+        <p class="subtitle is-5 text-medium">
+          Focused on helping the marginalised
+        </p>
+      </div>
+      <div class="feature-block-v1">
+        <div
+          class="columns is-multiline b-columns-half-tablet-p has-text-centered"
+        >
+          <!-- Feature -->
+          <div class="column is-4">
+            <div class="py-4">
+              <i
+                class="iconify rem-200 text-primary"
+                data-icon="fa6-solid:microchip"></i>
+              <h4 class="title is-6 is-narrow">Deeply Tech</h4>
+              <p class="pt-2 mx-auto max-w-3 text-medium rem-95">
+                We partner with startups where technology preferably drives the
+                business model, not just supports it.
+              </p>
+            </div>
+          </div>
+          <!-- Feature -->
+          <div class="column is-4">
+            <div class="py-4">
+              <i
+                class="iconify rem-200 text-primary"
+                data-icon="fluent:people-team-32-regular"></i>
+              <h4 class="title is-6 is-narrow">Team centric</h4>
+              <p class="pt-2 mx-auto max-w-3 text-medium rem-95">
+                We focus on people and teams, partnering with founders to drive
+                success, not just providing funding.
+              </p>
+            </div>
+          </div>
+          <!-- Feature -->
+          <div class="column is-4">
+            <div class="py-4">
+              <i class="iconify rem-200 text-primary" data-icon="icons8:idea"
+              ></i>
+              <h4 class="title is-6 is-narrow">Fresh Perspectives</h4>
+              <p class="pt-2 mx-auto max-w-3 text-medium rem-95">
+                We seek out startups that not only innovate, but also drive
+                positive change in communities they serve.
+              </p>
+            </div>
+          </div>
+          <!-- Feature -->
+          <div class="column is-4">
+            <div class="py-4">
+              <i
+                class="iconify rem-200 text-primary"
+                data-icon="carbon:crop-growth"></i>
+              <h4 class="title is-6 is-narrow">Traction</h4>
+              <p class="pt-2 mx-auto max-w-3 text-medium rem-95">
+                We support startups demonstrating early success, proven demand,
+                and a scalable business model.
+              </p>
+            </div>
+          </div>
+          <!-- Feature -->
+          <div class="column is-4">
+            <div class="py-4">
+              <i
+                class="iconify rem-200 text-primary"
+                data-icon="ph:rocket-duotone"></i>
+              <h4 class="title is-6 is-narrow">Propellant</h4>
+              <p class="pt-2 mx-auto max-w-3 text-medium rem-95">
+                We can guide startups through larger funding rounds and connect
+                them with later stage investors.
+              </p>
+            </div>
+          </div>
+          <!-- Feature -->
+          <div class="column is-4">
+            <div class="py-4">
+              <i
+                class="iconify rem-200 text-primary"
+                data-icon="la:globe-africa"></i>
+              <h4 class="title is-6 is-narrow">Love Africa</h4>
+              <p class="pt-2 mx-auto max-w-3 text-medium rem-95">
+                We are agnostic of geography but get really excited about
+                startups with an Africa-centric focus.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section has-pseudo-lines">
+    <div class="container">
+      <div class="py-6">
+        <div class="columns is-vcentered b-centered-tablet-p">
+          <div class="column is-5 is-offset-1">
+            <span class="is-block is-uppercase mb-2 text-primary"
+              >Partnering you</span
+            >
+            <h3 class="title is-3 is-narrow max-w-3 small:mx-auto">
+              Support all the way
+            </h3>
+            <p class="py-2 max-w-4 text-medium mb-4 small:mx-auto">
+              Our tech-savvy investors give our portfolio companies the
+              resources and support they need to level up their pursuit.
+            </p>
+            <ul class="pl-4 small:hidden">
+              <li class="is-flex is-align-items-center py-2">
+                <i class="iconify text-primary rem-125" data-icon="lucide:check"
+                ></i>
+                <div class="ml-2">
+                  <p class="small:max-w-2 text-medium">
+                    Experienced & Commercial
+                  </p>
+                </div>
+              </li>
+              <li class="is-flex is-align-items-center py-2">
+                <i class="iconify text-primary rem-125" data-icon="lucide:check"
+                ></i>
+                <div class="ml-2">
+                  <p class="small:max-w-2 text-medium">Deeply Technical</p>
+                </div>
+              </li>
+              <li class="is-flex is-align-items-center py-2">
+                <i class="iconify text-primary rem-125" data-icon="lucide:check"
+                ></i>
+                <div class="ml-2">
+                  <p class="small:max-w-2 text-medium">Connected</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="column is-6">
+            <img
+              class="light-image-block"
+              src="/img/vectors/good-team.svg"
+              alt=""
+            />
+            <img
+              class="dark-image-block"
+              src="/img/vectors/good-team.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section has-pseudo-lines">
+    <div class="container">
+      <div class="has-text-centered py-12">
+        <span class="tag is-primary is-curved is-outlined is-thick mb-2"
+          >Who we are</span
+        >
+        <h2 class="title is-3">Our Story</h2>
+        <p class="subtitle is-5 text-medium">
+          We weren't always amongst the top players
+        </p>
+      </div>
+
+      <div class="py-12">
+        <div class="columns is-vcentered">
+          <div class="column is-6 is-relative is-centered-portrait">
+            <div class="video-player-container is-square">
+              <video
+                id="hero-player"
+                class="video-player"
+                playsinline
+                controls
+                poster="/img/video/poster-1c.jpg"
+              >
+                <source src="/img/video/hands.mp4" type="video/mp4" />
+                <source src="/img/video/hands.webm" type="video/webm" />
+              </video>
+            </div>
+          </div>
+          <div class="column is-5 is-offset-1">
+            <h2 class="title is-3 small:text-centered">Our Values</h2>
+
+            <div
+              class="columns is-multiline small:max-w-5 small:mx-auto small:px-8"
+            >
+              <div class="column is-6">
+                <div class="py-2 medium:py-4">
+                  <h4 class="title is-6 is-narrow">Commitment</h4>
+                  <p class="pt-2 max-w-3 text-medium rem-90">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    videbimus.
+                  </p>
+                </div>
+              </div>
+              <div class="column is-6">
+                <div class="py-2 medium:py-4">
+                  <h4 class="title is-6 is-narrow">Collaboration</h4>
+                  <p class="pt-2 max-w-3 text-medium rem-90">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    videbimus.
+                  </p>
+                </div>
+              </div>
+              <div class="column is-6">
+                <div class="py-2 medium:py-4">
+                  <h4 class="title is-6 is-narrow">Diversity</h4>
+                  <p class="pt-2 max-w-3 text-medium rem-90">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    videbimus.
+                  </p>
+                </div>
+              </div>
+              <div class="column is-6">
+                <div class="py-2 medium:py-4">
+                  <h4 class="title is-6 is-narrow">Remote Work</h4>
+                  <p class="pt-2 max-w-3 text-medium rem-90">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                    videbimus.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section is-minimal has-pseudo-lines">
+    <div class="container">
+      <div class="pt-12 pb-4 mx-auto max-w-8">
+        <div class="has-text-centered mb-8">
+          <span class="tag is-primary is-curved is-outlined is-thick mb-2"
+            >Multipurpose</span
+          >
+          <h2 class="title is-3">Fit for any purpose</h2>
+        </div>
+        <div class="columns">
+          <div class="column is-6">
+            <p
+              class="text-medium small:text-centered small:mx-auto small:max-w-5"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem
+              iste, inquam, de voluptate quid sentit? Hanc quoque iucunditatem,
+              si vis, transfer in animum; Erat enim Polemonis. Apparet statim,
+              quae sint officia, quae actiones. Ita prorsus, inquam.
+            </p>
+          </div>
+          <div class="column is-6">
+            <p
+              class="text-medium small:text-centered small:mx-auto small:max-w-5"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem
+              iste, inquam, de voluptate quid sentit? Hanc quoque iucunditatem,
+              si vis, transfer in animum; Erat enim Polemonis. Apparet statim,
+              quae sint officia, quae actiones. Ita prorsus, inquam.
+            </p>
+          </div>
+        </div>
+
+        <div class="feature-block-v8 pb-12">
+          <div class="columns is-multiline">
+            <div class="column is-12">
+              <div class="block mb-4 has-text-centered mx-auto max-w-8">
+                <div class="mx-auto max-w-7">
+                  <div class="video-player-container is-16by9">
+                    <video
+                      id="hero-player"
+                      class="video-player"
+                      playsinline
+                      controls
+                      poster="/img/video/poster-1a.jpg"
+                    >
+                      <source src="/img/video/hands.mp4" type="video/mp4" />
+                      <source src="/img/video/hands.webm" type="video/webm" />
+                    </video>
+                  </div>
+                </div>
+
+                <div
+                  class="columns b-columns-third-tablet-p has-text-left mt-4"
+                >
+                  <!-- Feature -->
+                  <div class="column is-4 has-text-centered">
+                    <div
+                      class="mx-auto is-44x44 is-flex is-justify-content-center is-align-items-center is-circle bg-grey"
+                    >
+                      <i
+                        class="iconify rem-175 text-primary"
+                        data-icon="ph:sticker-duotone"></i>
+                    </div>
+                    <div class="py-2">
+                      <h4 class="title is-6 is-leading">White labeled</h4>
+                      <p class="mx-auto max-w-2 text-medium rem-90">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Feature -->
+                  <div class="column is-4 has-text-centered">
+                    <div
+                      class="mx-auto is-44x44 is-flex is-justify-content-center is-align-items-center is-circle bg-grey"
+                    >
+                      <i
+                        class="iconify rem-175 text-primary"
+                        data-icon="ph:path-duotone"></i>
+                    </div>
+                    <div class="py-2">
+                      <h4 class="title is-6 is-leading">Minimal</h4>
+                      <p class="mx-auto max-w-2 text-medium rem-90">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Feature -->
+                  <div class="column is-4 has-text-centered">
+                    <div
+                      class="mx-auto is-44x44 is-flex is-justify-content-center is-align-items-center is-circle bg-grey"
+                    >
+                      <i
+                        class="iconify rem-175 text-primary"
+                        data-icon="ph:sparkle-duotone"></i>
+                    </div>
+                    <div class="py-2">
+                      <h4 class="title is-6 is-leading">Efficient</h4>
+                      <p class="mx-auto max-w-2 text-medium rem-90">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="has-text-centered">
+        <p class="subtitle mx-auto max-w-5 text-medium">
+          See us as not just investors but partners.
+        </p>
+        <div class="buttons is-centered mt-4 mb-6">
+          <a class="button is-primary is-big is-long-2 raised" href="#"
+            >Get in Touch</a
+          >
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</Layout>
