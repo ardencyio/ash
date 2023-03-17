@@ -1,0 +1,24 @@
+---
+import Layout from "../layouts/Default.astro";
+import Contact from "../components/blocks/contact/Contact.astro";
+const title = "Home";
+---
+
+<Layout title={title}>
+  <div class="section" id="contact">
+    <div class="container">
+      <div class="has-text-centered py-12">
+        <span class="tag is-primary is-curved is-outlined mb-2">Contact</span>
+        <h2 class="title is-3">Get in touch</h2>
+        <p class="subtitle is-5 text-medium">
+          Please fill in the form and tell us how we can help
+        </p>
+      </div>
+
+      <!-- Contact block v2 -->
+      <div class="pb-12">
+        <Contact />
+      </div>
+    </div>
+  </div>
+</Layout>

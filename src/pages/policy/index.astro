@@ -2,14 +2,14 @@
 // module imports
 import Layout from "../../layouts/Default.astro";
 import FormattedDate from "../../components/Date.astro";
-import Post from "../../components/blocks/posts/Post.astro";
+import Policy from "../../components/blocks/policy/Policy.astro";
 
 // library imports
 import { getCollection } from "astro:content";
 
 // scripts
-const title = "Blog";
-const posts = (await getCollection("blog")).sort(
+const title = "Documents";
+const posts = (await getCollection("policy")).sort(
   (a, b) => a.data.updated.valueOf() - b.data.updated.valueOf()
 );
 ---
@@ -18,10 +18,10 @@ const posts = (await getCollection("blog")).sort(
   <div id="content-start" class="section">
     <div class="container">
       <div class="has-text-centered py-12">
-        <span class="tag is-primary is-curved is-outlined mb-2">Blog</span>
-        <h2 class="title is-3">Latest Musings</h2>
+        <span class="tag is-primary is-curved is-outlined mb-2">Compliance</span>
+        <h2 class="title is-3">Important Documents</h2>
         <p class="subtitle is-5 text-medium">
-          Stay tuned to our new feed and don't miss anything
+          Please ensure you have read and accept these
         </p>
       </div>
 
@@ -31,7 +31,7 @@ const posts = (await getCollection("blog")).sort(
           <div class="columns is-multiline b-columns-half-tablet-p">
             {
               posts.map((post) => (
-                <Post
+                <Policy
                   title={post.data.title}
                   description={post.data.description}
                   image={post.data.image}

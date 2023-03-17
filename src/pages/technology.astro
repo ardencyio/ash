@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Default.astro";
+import Statistics from "../components/blocks/content/Statistics.astro";
 const title = "Home";
 ---
 
@@ -11,16 +12,18 @@ const title = "Home";
       <div class="container">
         <div class="columns is-vcentered mt-6">
           <div class="column">
-            <h1 class="title is-1 is-bold">Build your minimal app.</h1>
+            <h1 class="title is-1 is-bold">Build your super idea</h1>
             <p
               class="subtitle is-5 mx-auto max-w-5 b-centered-tablet-p text-medium"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sint ista
-              Graecorum; Hoc mihi cum tuo fratre convenit.
+              Product technology leadership and development for mobile, web, app services, platforms,
+              data pipelines and more.
             </p>
             <div class="buttons">
-              <a class="button is-primary is-medium is-raised">Discover</a>
-              <a class="button is-primary is-outlined is-medium">Free Trial</a>
+              <a class="button is-primary is-medium is-raised" href="#skills"
+                >Discover</a
+              >
+              <a class="button is-primary is-outlined is-medium" href="#hire-us">Get Started</a>
             </div>
             <div class="mx-auto max-w-6">
               <img
@@ -40,149 +43,7 @@ const title = "Home";
     </div>
   </div>
 
-  <div class="section">
-    <div class="container">
-      <div class="has-text-centered pb-6">
-        <span class="tag is-primary is-curved is-outlined is-thick mb-2"
-          >Made by Pros</span
-        >
-        <h2 class="title is-3">Made for winners</h2>
-        <p class="subtitle is-5 text-medium">
-          Whatever is your problem, we have a solution
-        </p>
-      </div>
-
-      <div class="feature-block-v2">
-        <div class="columns b-columns-half-tablet-p is-multiline">
-          <!-- Feature -->
-          <div class="column is-3">
-            <div class="py-4">
-              <div
-                class="is-flex is-justify-content-center is-align-items-center size-44x44 is-circle bg-primary text-primary-invert mb-4"
-              >
-                <i class="iconify rem-150" data-icon="ph:crown-duotone"></i>
-              </div>
-              <h4 class="title is-6 is-narrow">For Pros</h4>
-              <p class="pt-2 max-w-3 text-medium rem-95">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                videbimus.
-              </p>
-            </div>
-          </div>
-          <!-- Feature -->
-          <div class="column is-3">
-            <div class="py-4">
-              <div
-                class="is-flex is-justify-content-center is-align-items-center size-44x44 is-circle bg-primary text-primary-invert mb-4"
-              >
-                <i class="iconify rem-150" data-icon="ph:wine-duotone"></i>
-              </div>
-              <h4 class="title is-6 is-narrow">For Business</h4>
-              <p class="pt-2 max-w-3 text-medium rem-95">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                videbimus.
-              </p>
-            </div>
-          </div>
-          <!-- Feature -->
-          <div class="column is-3">
-            <div class="py-4">
-              <div
-                class="is-flex is-justify-content-center is-align-items-center size-44x44 is-circle bg-primary text-primary-invert mb-4"
-              >
-                <i class="iconify rem-150" data-icon="ph:trophy-duotone"></i>
-              </div>
-              <h4 class="title is-6 is-narrow">For Champions</h4>
-              <p class="pt-2 max-w-3 text-medium rem-95">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                videbimus.
-              </p>
-            </div>
-          </div>
-          <!-- Feature -->
-          <div class="column is-3">
-            <div class="py-4">
-              <div
-                class="is-flex is-justify-content-center is-align-items-center size-44x44 is-circle bg-primary text-primary-invert mb-4"
-              >
-                <i class="iconify rem-150" data-icon="ph:rocket-duotone"></i>
-              </div>
-              <h4 class="title is-6 is-narrow">For Startups</h4>
-              <p class="pt-2 max-w-3 text-medium rem-95">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                videbimus.
-              </p>
-            </div>
-          </div>
-          <!-- Feature -->
-          <div class="column is-3">
-            <div class="py-4">
-              <div
-                class="is-flex is-justify-content-center is-align-items-center size-44x44 is-circle bg-primary text-primary-invert mb-4"
-              >
-                <i class="iconify rem-150" data-icon="ph:storefront-duotone"
-                ></i>
-              </div>
-              <h4 class="title is-6 is-narrow">For Merchants</h4>
-              <p class="pt-2 max-w-3 text-medium rem-95">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                videbimus.
-              </p>
-            </div>
-          </div>
-          <!-- Feature -->
-          <div class="column is-3">
-            <div class="py-4">
-              <div
-                class="is-flex is-justify-content-center is-align-items-center size-44x44 is-circle bg-primary text-primary-invert mb-4"
-              >
-                <i class="iconify rem-150" data-icon="ph:megaphone-duotone"></i>
-              </div>
-              <h4 class="title is-6 is-narrow">For Marketers</h4>
-              <p class="pt-2 max-w-3 text-medium rem-95">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                videbimus.
-              </p>
-            </div>
-          </div>
-          <!-- Feature -->
-          <div class="column is-3">
-            <div class="py-4">
-              <div
-                class="is-flex is-justify-content-center is-align-items-center size-44x44 is-circle bg-primary text-primary-invert mb-4"
-              >
-                <i class="iconify rem-150" data-icon="ph:parachute-duotone"></i>
-              </div>
-              <h4 class="title is-6 is-narrow">For Explorators</h4>
-              <p class="pt-2 max-w-3 text-medium rem-95">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                videbimus.
-              </p>
-            </div>
-          </div>
-          <!-- Feature -->
-          <div class="column is-3">
-            <div class="py-4">
-              <div
-                class="is-flex is-justify-content-center is-align-items-center size-44x44 is-circle bg-primary text-primary-invert mb-4"
-              >
-                <i
-                  class="iconify rem-150"
-                  data-icon="ph:microphone-stage-duotone"></i>
-              </div>
-              <h4 class="title is-6 is-narrow">For Artists</h4>
-              <p class="pt-2 max-w-3 text-medium rem-95">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                videbimus.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section">
+  <!-- <div class="section">
     <div class="container">
       <div class="feature-block-v6">
         <div class="columns is-vcentered is-multiline">
@@ -245,70 +106,17 @@ const title = "Home";
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <div class="section">
-    <div class="container">
-      <div class="has-text-centered py-12">
-        <span class="tag is-primary is-curved is-outlined mb-2"
-          >Our founders</span
-        >
-        <h2 class="title is-3">The guys behind it</h2>
-        <p class="subtitle is-5 text-medium">
-          Some members of our talented creators crew
-        </p>
-      </div>
-
-      <div class="content-block-v2">
-        <div class="py-6 mx-auto max-w-8">
-          <div class="columns is-vcentered">
-            <div class="column is-6">
-              <p
-                class="text-medium text-italic rem-95 mb-4 small:text-centered"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem
-                iste, inquam, de voluptate quid sentit?
-              </p>
-              <p class="text-medium small:text-centered">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem
-                iste, inquam, de voluptate quid sentit? Hanc quoque
-                iucunditatem, si vis, transfer in animum.
-              </p>
-            </div>
-            <div class="column is-6">
-              <div class="mx-auto is-flex is-justify-content-center">
-                <img
-                  class="inline-block size-80x80 object-cover mx-2 is-circle filter-gray"
-                  src="/img/avatars/19.jpg"
-                  alt="Avatar"
-                />
-                <img
-                  class="inline-block size-80x80 object-cover mx-2 is-circle filter-gray"
-                  src="/img/avatars/29.jpg"
-                  alt="Avatar"
-                />
-                <img
-                  class="inline-block size-80x80 object-cover mx-2 is-circle filter-gray"
-                  src="/img/avatars/42.jpg"
-                  alt="Avatar"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section">
+  <div class="section" id="skills">
     <div class="container">
       <div class="has-text-centered pb-6">
         <span class="tag is-primary is-curved is-outlined is-thick mb-2"
-          >Our App</span
+          >Skills</span
         >
-        <h2 class="title is-3">How it works</h2>
+        <h2 class="title is-3">Our expertise</h2>
         <p class="subtitle is-5 text-medium">
-          Take the time to learn more about the app
+          Deep knowledge across the full software development lifecycle
         </p>
       </div>
 
@@ -319,34 +127,38 @@ const title = "Home";
             <div class="column is-6">
               <img
                 class="block mx-auto light-image-block"
-                src="/img/illustrations/mobile-feature-1.svg"
+                src="/img/vectors/design.svg"
                 alt="Block image"
               />
               <img
                 class="block mx-auto dark-image-block"
-                src="/img/illustrations/mobile-feature-1-dark.svg"
+                src="/img/vectors/design.svg"
                 alt="Block image"
               />
             </div>
 
             <div class="column is-5">
               <span class="is-block is-uppercase mb-2 text-primary"
-                >Personal Space</span
+                >Experience Design</span
               >
               <h3 class="title is-3 is-narrow max-w-3 small:mx-auto">
-                Manage your account
+                Product Experts
               </h3>
               <p class="py-2 max-w-4 text-medium mb-4 small:mx-auto">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Illud
-                non continuo, ut aeque incontentae. Duo Reges: constructio
-                interrete. Si qua in iis corrigere voluit, deteriora fecit. Sit
-                enim idem caecus, debilis.
+                We have skilled product managers with a strong technical leaning
+                able to communicate and work effectively with your development
+                teams and stakeholders. Our product teams is as comfortable in
+                business meetings as they are in Vim <i class="iconify" data-icon="ph:smiley-wink-duotone"></i>.
               </p>
-
-              <a class="action-link" href="#">
+              <p class="py-2 max-w-4 text-medium mb-4 small:mx-auto">
+                We've designed and built experiences across multiple sectors
+                including banking, data & research, education and energy,
+                manufacturing.
+              </p>
+              <!-- <a class="action-link" href="#">
                 <span>See how it works</span>
                 <i class="iconify" data-icon="lucide:arrow-right"></i>
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
@@ -356,53 +168,103 @@ const title = "Home";
           <div class="columns is-vcentered b-centered-tablet-p">
             <div class="column is-5 is-offset-1">
               <span class="is-block is-uppercase mb-2 text-primary"
-                >Open your ears</span
+                >Engineering</span
               >
               <h3 class="title is-3 is-narrow max-w-3 small:mx-auto">
-                Listen all the day
+                Skilled Polygots
               </h3>
               <p class="py-2 max-w-4 text-medium mb-4 small:mx-auto">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Illud
-                non continuo, ut aeque incontentae. Duo Reges: constructio
-                interrete. Si qua in iis corrigere voluit, deteriora fecit. Sit
-                enim idem caecus, debilis.
+                Programming languages are a tool. Are developers works with your
+                team to understand the desired business outcome and are able to
+                build using modern software architecture pardigms leveraging the
+                required cutting edge tools and frameworks to meet your goals.
               </p>
-              <ul class="pl-4 small:hidden">
-                <li class="is-flex is-align-items-center py-2">
+              <p class="py-2 max-w-4 text-medium mb-4 small:mx-auto">
+                While comfortable in any stack as developers, there are
+                frameworks and tools we like most.
+              </p>
+              <!-- languages -->
+              <div class="is-flex py-4">
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i class="iconify rem-175" data-icon="fa-brands:rust"></i>
+                </div>
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i class="iconify rem-175" data-icon="fa6-brands:golang"></i>
+                </div>
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
                   <i
-                    class="iconify text-primary rem-125"
-                    data-icon="lucide:check"></i>
-                  <div class="ml-2">
-                    <p class="small:max-w-2 text-medium">Music, songs</p>
-                  </div>
-                </li>
-                <li class="is-flex is-align-items-center py-2">
-                  <i
-                    class="iconify text-primary rem-125"
-                    data-icon="lucide:check"></i>
-                  <div class="ml-2">
-                    <p class="small:max-w-2 text-medium">Conferences</p>
-                  </div>
-                </li>
-                <li class="is-flex is-align-items-center py-2">
-                  <i
-                    class="iconify text-primary rem-125"
-                    data-icon="lucide:check"></i>
-                  <div class="ml-2">
-                    <p class="small:max-w-2 text-medium">Courses, debates</p>
-                  </div>
-                </li>
-              </ul>
+                    class="iconify rem-175"
+                    data-icon="file-icons:typescript-alt"></i>
+                </div>
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i class="iconify rem-175" data-icon="simple-icons:kotlin"
+                  ></i>
+                </div>
+              </div>
+              <!-- frameworks -->
+              <div class="is-flex py-4">
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i class="iconify rem-175" data-icon="fa-brands:node-js"></i>
+                </div>
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i class="iconify rem-175" data-icon="fa-brands:react"></i>
+                </div>
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i class="iconify rem-175" data-icon="file-icons:svelte"></i>
+                </div>
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i class="iconify rem-175" data-icon="simple-icons:astro"></i>
+                </div>
+              </div>
+              <!-- frameworks -->
+              <div class="is-flex py-4">
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i class="iconify rem-175" data-icon="fa-brands:swift"></i>
+                </div>
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i class="iconify rem-175" data-icon="file-icons:flutter"></i>
+                </div>
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i class="iconify rem-175" data-icon="simple-icons:ios"></i>
+                </div>
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i class="iconify rem-175" data-icon="fa-brands:android"></i>
+                </div>
+              </div>
             </div>
             <div class="column is-6">
               <img
                 class="block mx-auto light-image-block"
-                src="/img/illustrations/mobile-feature-2.svg"
+                src="/img/vectors/coding.svg"
                 alt="Block image"
               />
               <img
                 class="block mx-auto dark-image-block"
-                src="/img/illustrations/mobile-feature-2-dark.svg"
+                src="/img/vectors/coding.svg"
                 alt="Block image"
               />
             </div>
@@ -415,34 +277,226 @@ const title = "Home";
             <div class="column is-6">
               <img
                 class="block mx-auto light-image-block"
-                src="/img/illustrations/mobile-feature-3.svg"
+                src="/img/vectors/endpoints.svg"
                 alt="Block image"
               />
               <img
                 class="block mx-auto dark-image-block"
-                src="/img/illustrations/mobile-feature-3-dark.svg"
+                src="/img/vectors/endpoints.svg"
                 alt="Block image"
               />
             </div>
 
             <div class="column is-5">
-              <span class="is-block is-uppercase mb-2 text-primary"
-                >Share it</span
+              <span class="is-block is-uppercase mb-2 text-primary">DevOps</span
               >
               <h3 class="title is-3 is-narrow max-w-3 small:mx-auto">
-                Listen and share your own
+                Repeatable, Observable Deployments
               </h3>
               <p class="py-2 max-w-4 text-medium mb-4 small:mx-auto">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Illud
-                non continuo, ut aeque incontentae. Duo Reges: constructio
-                interrete. Si qua in iis corrigere voluit, deteriora fecit. Sit
-                enim idem caecus, debilis.
+                We like simplified and repeatable deployments running on
+                technology able to scale as required. We practice GitOps
+                ensuring that infrastructure is versioned as code.
               </p>
-
-              <a class="action-link" href="#">
+              <p class="py-2 max-w-4 text-medium mb-4 small:mx-auto">
+                We prioritising observability configured with pre-emptive
+                approaches to failure based on thresholds and alerts in our
+                stacks. Nobody likes the always 2am call.
+              </p>
+              <!-- infra -->
+              <div class="is-flex py-4">
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i class="iconify rem-175" data-icon="file-icons:terraform"
+                  ></i>
+                </div>
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i class="iconify rem-175" data-icon="file-icons:kubernetes"
+                  ></i>
+                </div>
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i class="iconify rem-175" data-icon="file-icons:docker"></i>
+                </div>
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i class="iconify rem-175" data-icon="simple-icons:helm"></i>
+                </div>
+              </div>
+              <!-- observability -->
+              <div class="is-flex py-4">
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i class="iconify rem-175" data-icon="simple-icons:prometheus"
+                  ></i>
+                </div>
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i class="iconify rem-175" data-icon="simple-icons:grafana"
+                  ></i>
+                </div>
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i class="iconify rem-175" data-icon="simple-icons:datadog"
+                  ></i>
+                </div>
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i
+                    class="iconify rem-175"
+                    data-icon="clarity:ci-cd-line"
+                    alt="ci-cd"></i>
+                </div>
+              </div>
+              <!-- cloud -->
+              <div class="is-flex py-4">
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i class="iconify rem-175" data-icon="simple-icons:amazonaws"
+                  ></i>
+                </div>
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i
+                    class="iconify rem-175"
+                    data-icon="simple-icons:googlecloud"></i>
+                </div>
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i
+                    class="iconify rem-175"
+                    data-icon="simple-icons:azuredevops"></i>
+                </div>
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i
+                    class="iconify rem-175"
+                    data-icon="simple-icons:digitalocean"
+                    alt="ci-cd"></i>
+                </div>
+              </div>
+              <!-- <a class="action-link" href="#">
                 <span>Learn more about sharing</span>
                 <i class="iconify" data-icon="lucide:arrow-right"></i>
-              </a>
+              </a> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature -->
+        <div class="py-6">
+          <div class="columns is-vcentered b-centered-tablet-p">
+            <div class="column is-5 is-offset-1">
+              <span class="is-block is-uppercase mb-2 text-primary"
+                >Quality</span
+              >
+              <h3 class="title is-3 is-narrow max-w-3 small:mx-auto">
+                Test, Test, Test...
+              </h3>
+              <p class="py-2 max-w-4 text-medium mb-4 small:mx-auto">
+                Passionate about delivering flawless software? So are we.
+                Our secret weapon? Our breadth of expertise in
+                software testing. From BDD to TDD, we use the latest testing
+                methodologies to ensure your software is top-notch.
+              </p>
+              <p class="py-2 max-w-4 text-medium mb-4 small:mx-auto">
+                With unit, integration, and end-to-end testing, we catch and
+                squash pesky bugs before they can cause any trouble. Our mission
+                is simple: to deliver high-performing, sleek software products
+                that exceed your expectations and make your business thrive.
+              </p>
+              <!-- cloud -->
+              <div class="is-flex py-4">
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i class="iconify rem-175" data-icon="simple-icons:cypress"
+                  ></i>
+                </div>
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i
+                    class="iconify rem-175"
+                    data-icon="simple-icons:vitest"></i>
+                </div>
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i
+                    class="iconify rem-175"
+                    data-icon="simple-icons:jest"></i>
+                </div>
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i
+                    class="iconify rem-175"
+                    data-icon="simple-icons:puppeteer"
+                    alt="ci-cd"></i>
+                </div>
+                <div
+                  class="is-flex is-justify-content-center is-align-items-center size-52x52 is-circle bg-muted text-primary mx-2"
+                >
+                  <i
+                    class="iconify rem-175"
+                    data-icon="simple-icons:blazemeter"
+                    alt="ci-cd"></i>
+                </div>
+              </div>
+              <ul class="pl-4 small:hidden">
+                <li class="is-flex is-align-items-center py-2">
+                  <i
+                    class="iconify text-primary rem-125"
+                    data-icon="lucide:check"></i>
+                  <div class="ml-2">
+                    <p class="small:max-w-2 text-medium">Mobile.App testing</p>
+                  </div>
+                </li>
+                <li class="is-flex is-align-items-center py-2">
+                  <i
+                    class="iconify text-primary rem-125"
+                    data-icon="lucide:check"></i>
+                  <div class="ml-2">
+                    <p class="small:max-w-2 text-medium">Web headless testing</p>
+                  </div>
+                </li>
+                <li class="is-flex is-align-items-center py-2">
+                  <i
+                    class="iconify text-primary rem-125"
+                    data-icon="lucide:check"></i>
+                  <div class="ml-2">
+                    <p class="small:max-w-2 text-medium">
+                      API integration testing
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="column is-6">
+              <img
+                class="block mx-auto light-image-block"
+                src="/img/vectors/code-testing.svg"
+                alt="Block image"
+              />
+              <img
+                class="block mx-auto dark-image-block"
+                src="/img/vectors/code-testing.svg"
+                alt="Block image"
+              />
             </div>
           </div>
         </div>
@@ -450,259 +504,40 @@ const title = "Home";
     </div>
   </div>
 
-  <div class="section">
+  <!-- Statistics section
+  <div class="section has-pseudo-lines">
     <div class="container">
-      <div class="has-text-centered pb-6">
-        <span class="tag is-primary is-curved is-outlined mb-2"
-          >Success Stories</span
+      <div class="has-text-centered py-12">
+        <span class="tag is-primary is-curved is-outlined mb-2">Statistics</span
         >
-        <h2 class="title is-3">Booba's story</h2>
+        <h2 class="title is-3">Code Tracking.</h2>
         <p class="subtitle is-5 text-medium">
-          How he made it using our services
+          Nothing is lost, everything is tracked
         </p>
       </div>
 
-      <div class="content-block-v6">
-        <div class="py-6 mx-auto max-w-8">
-          <div class="columns is-vcentered b-only-tablet-p-flex">
-            <div class="column is-6">
-              <img src="/img/photo/600x500/6.jpg" alt="" />
-            </div>
-            <div class="column is-6">
-              <p class="text-medium mb-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Idem
-                iste, inquam, de voluptate quid sentit? Hanc quoque
-                iucunditatem, si vis, transfer in animum; Erat enim Polemonis.
-                Apparet statim, quae sint officia, quae actiones. Ita prorsus,
-                inquam.
-              </p>
-              <div class="is-flex is-align-items-center py-4">
-                <img
-                  class="mx-2 max-w-1/5 filter-invert"
-                  src="/img/logo/brands/infinite.svg"
-                  alt="Client logo"
-                />
-                <img
-                  class="mx-2 max-w-1/5 filter-invert"
-                  src="/img/logo/brands/kromo.svg"
-                  alt="Client logo"
-                />
-                <img
-                  class="mx-2 max-w-1/5 filter-invert"
-                  src="/img/logo/brands/tribe.svg"
-                  alt="Client logo"
-                />
-                <img
-                  class="mx-2 max-w-1/5 filter-invert"
-                  src="/img/logo/brands/gutwork.svg"
-                  alt="Client logo"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+      Content block: statistics
+      <div class="pb-12">
+        <Statistics />
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <div class="section">
-    <div class="container">
-      <div class="pricing-block-v2">
-        <div class="pricing-table is-comparative">
-          <div class="pricing-plan">
-            <div class="plan-header">Starter</div>
-            <div class="plan-price">
-              <span class="plan-price-amount"
-                ><span class="plan-price-currency">$</span>20</span
-              >/month
-            </div>
-            <div class="plan-items">
-              <div class="plan-item text-medium">20GB Storage</div>
-              <div class="plan-item text-medium">100 Domains</div>
-              <div class="plan-item text-medium">-</div>
-              <div class="plan-item text-medium">-</div>
-            </div>
-            <div class="plan-footer">
-              <button class="button is-fullwidth" disabled="disabled">
-                Current plan
-              </button>
-            </div>
-          </div>
-
-          <div class="pricing-plan">
-            <div class="plan-header">Startup</div>
-            <div class="plan-price">
-              <span class="plan-price-amount"
-                ><span class="plan-price-currency">$</span>40</span
-              >/month
-            </div>
-            <div class="plan-items">
-              <div class="plan-item text-medium">20GB Storage</div>
-              <div class="plan-item text-medium">25 Domains</div>
-              <div class="plan-item text-medium">1TB Bandwidth</div>
-              <div class="plan-item text-medium">-</div>
-            </div>
-            <div class="plan-footer">
-              <button class="button is-fullwidth">Choose</button>
-            </div>
-          </div>
-
-          <div class="pricing-plan is-active is-primary">
-            <div class="plan-header">Business</div>
-            <div class="plan-price">
-              <span class="plan-price-amount"
-                ><span class="plan-price-currency">$</span>60</span
-              >/month
-            </div>
-            <div class="plan-items">
-              <div class="plan-item text-medium">200GB Storage</div>
-              <div class="plan-item text-medium">50 Domains</div>
-              <div class="plan-item text-medium">1TB Bandwidth</div>
-              <div class="plan-item text-medium">100 Email Boxes</div>
-            </div>
-            <div class="plan-footer">
-              <button class="button is-fullwidth">Choose</button>
-            </div>
-          </div>
-
-          <div class="pricing-plan">
-            <div class="plan-header">Enterprise</div>
-            <div class="plan-price">
-              <span class="plan-price-amount"
-                ><span class="plan-price-currency">$</span>100</span
-              >/month
-            </div>
-            <div class="plan-items">
-              <div class="plan-item text-medium">2TB Storage</div>
-              <div class="plan-item text-medium">100 Domains</div>
-              <div class="plan-item text-medium">1TB Bandwidth</div>
-              <div class="plan-item text-medium">1000 Email Boxes</div>
-            </div>
-            <div class="plan-footer">
-              <button class="button is-fullwidth">Choose</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section">
-    <div class="container">
-      <div class="has-text-centered pb-6">
-        <span class="tag is-primary is-curved is-outlined is-thick mb-2"
-          >Testimonials</span
-        >
-        <h2 class="title is-3">They speak for us</h2>
-        <p class="subtitle is-5 text-medium">
-          Hear what our customers say about us
-        </p>
-      </div>
-
-      <div class="testimonial-block-v2">
-        <div class="columns has-text-centered b-columns-half-tablet-p mb-6">
-          <div class="column">
-            <div class="card p-5 border-primary">
-              <div class="has-text-left ml-4">
-                <i
-                  class="iconify rem-175 text-primary"
-                  data-icon="fa6-solid:quote-left"></i>
-              </div>
-              <div class="level mt-4 mb-4">
-                <div class="level-item">
-                  <figure class="image size-64x64">
-                    <img
-                      class="block size-64x64 is-circle filter-gray"
-                      src="/img/avatars/15.jpg"
-                      alt="Avatar"
-                    />
-                  </figure>
-                </div>
-              </div>
-              <p class="block mx-auto max-w-4 text-medium px-4">
-                It's a really cool network. Like, we had a fight with Richard at
-                one point, and I think they deleted some of my data, but then
-                they brought it back. Just bro's being bro's.
-              </p>
-              <h5 class="title is-6 is-narrow">Anna Miller</h5>
-              <p class="rem-90 text-light mb-4">CEO at HeyBudd</p>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="card p-5 border-primary">
-              <div class="has-text-left ml-4">
-                <i
-                  class="iconify rem-175 text-primary"
-                  data-icon="fa6-solid:quote-left"></i>
-              </div>
-              <div class="level mt-4 mb-4">
-                <div class="level-item">
-                  <figure class="image size-64x64">
-                    <img
-                      class="block size-64x64 is-circle filter-gray"
-                      src="/img/avatars/23.jpg"
-                      alt="Avatar"
-                    />
-                  </figure>
-                </div>
-              </div>
-              <p class="block mx-auto max-w-4 text-medium px-4">
-                It's a really cool network. Like, we had a fight with Richard at
-                one point, and I think they deleted some of my data, but then
-                they brought it back. Just bro's being bro's.
-              </p>
-              <h5 class="title is-6 is-narrow">Jack Stornton</h5>
-              <p class="rem-90 text-light mb-4">CEO at KeyPress</p>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="card p-5 border-primary">
-              <div class="has-text-left ml-4">
-                <i
-                  class="iconify rem-175 text-primary"
-                  data-icon="fa6-solid:quote-left"></i>
-              </div>
-              <div class="level mt-4 mb-4">
-                <div class="level-item">
-                  <figure class="image size-64x64">
-                    <img
-                      class="block size-64x64 is-circle filter-gray"
-                      src="/img/avatars/11.jpg"
-                      alt="Avatar"
-                    />
-                  </figure>
-                </div>
-              </div>
-              <p class="block mx-auto max-w-4 text-medium px-4">
-                It's a really cool network. Like, we had a fight with Richard at
-                one point, and I think they deleted some of my data, but then
-                they brought it back. Just bro's being bro's.
-              </p>
-              <h5 class="title is-6 is-narrow">Jessica Swants</h5>
-              <p class="rem-90 text-light mb-4">CEO at MyBeee</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section">
+  <div class="section" id="hire-us">
     <div class="container">
       <div class="call-block-v3">
         <div class="card max-w-7 mx-auto px-4 py-6 border-primary">
           <div class="has-text-centered">
-            <h3 class="title is-3 is-spaced">Sign up now</h3>
+            <h3 class="title is-3 is-spaced">It's all in the cloud</h3>
             <p class="subtitle is-6 mx-auto max-w-3 text-medium">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis est
-              tam dissimile homini. Quae cum dixisset paulumque?
+              We take a cloud native approach leveraging capable open-source tools
             </p>
-            <a class="button is-primary raised is-long-3">Get Started</a>
+            <a class="button is-primary is-big is-long-2 raised" href="mailto:hello@ardency.io">
+              Hire Us
+            </a>
 
             <p class="rem-90 py-4 text-light">
-              Biggest companies using our product
+              Experienced with all hyperscale cloud platforms
             </p>
             <div class="mx-auto max-w-5 max-w-tablet-p max-w-tp-4">
               <div
@@ -711,28 +546,28 @@ const title = "Home";
                 <div class="column large:px-5">
                   <img
                     class="block max-w-xs mx-auto filter-invert"
-                    src="/img/logo/brands/covenant.svg"
+                    src="/img/logo/brands/aws.svg"
                     alt=""
                   />
                 </div>
                 <div class="column large:px-5">
                   <img
                     class="block max-w-xs mx-auto filter-invert"
-                    src="/img/logo/brands/kromo.svg"
+                    src="/img/logo/brands/gcp.svg"
                     alt=""
                   />
                 </div>
                 <div class="column large:px-5">
                   <img
                     class="block max-w-xs mx-auto filter-invert"
-                    src="/img/logo/brands/infinite.svg"
+                    src="/img/logo/brands/azure.svg"
                     alt=""
                   />
                 </div>
                 <div class="column large:px-5">
                   <img
                     class="block max-w-xs mx-auto filter-invert"
-                    src="/img/logo/brands/tribe.svg"
+                    src="/img/logo/brands/digital-ocean.svg"
                     alt=""
                   />
                 </div>

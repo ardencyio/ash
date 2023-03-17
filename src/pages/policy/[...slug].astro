@@ -3,14 +3,14 @@ import { CollectionEntry, getCollection } from 'astro:content';
 import Layout from "../../layouts/Default.astro";
 
 export async function getStaticPaths() {
-	const posts = await getCollection('blog');
-	return posts.map((post) => ({
+	const policies = await getCollection('policy');
+	return policies.map((post) => ({
 		params: { slug: post.slug },
 		props: post,
 	}));
 }
 
-type Props = CollectionEntry<'blog'>;
+type Props = CollectionEntry<'policy'>;
 const post = Astro.props;
 const { Content } = await post.render();
 ---
@@ -20,7 +20,7 @@ const { Content } = await post.render();
 	<div class="section">
 		<div class="container">
 			<div class="has-text-centered py-12">
-				<span class="tag is-primary is-curved is-outlined mb-2">Article</span>
+				<span class="tag is-primary is-curved is-outlined mb-2">Policy</span>
 				<h2 class="title is-3">{post.data.title}</h2>
 				<p class="subtitle is-5 text-medium">
 					{post.data.description}

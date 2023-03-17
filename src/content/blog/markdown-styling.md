@@ -3,8 +3,9 @@ title: "Markdown Style Guide"
 description: "Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro."
 created: "Jul 01 2022"
 updated: "Mar 07 2023"
-image: "/placeholder-hero.jpg"
-author: "Goose"
+image: "/img/vectors/content.svg"
+avatar: "/img/logo/icon.svg"
+author: "ardency"
 tags: ["astro", "markdown"]
 language: "en"
 ---
