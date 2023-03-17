@@ -96,9 +96,6 @@
   // light-text HSL (#a2a5b9) // hsl(232, 14%, 68%)
   @include colorHsl("light-text", 232, 14%, 68%);
 
-  // night HSL (#292524) // hsl(12, 6%, 15%)
-  // @include colorHsl('night', 12, 6%, 15%);
-
   // night HSL (#0D1414) // hsl(180, 21%, 6%)
   @include colorHsl('night', 180, 21%, 6%);
 }

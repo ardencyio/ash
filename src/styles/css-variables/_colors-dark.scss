@@ -3,17 +3,28 @@
   --primary-h: 5; /* Hue        */
   --primary-s: 76%; /* Saturation */
   --primary-l: 51%; /* Lightness  */
-  --primary-color-invert: var(--dark-text);
+  --primary-color-invert: var(--fade-grey);
+
+  // placeload colors
+  --placeload-nuance-from: rgb(255 255 255 / 7%);
+  --placeload-nuance-to: rgb(255 255 255 / 15%);
+  --placeload-dark-nuance-from: rgb(0 0 0 / 15%);
+  --placeload-dark-nuance-to: rgb(0 0 0 / 24%);
 
   // override light colors
   // @include colorHsl("primary", 5, 76%, 51%);
   @include colorHsl("primary", 0, 0%, 100%);
 
-  // medium-text HSL (#78716c) // hsl(25, 5%, 64%)
+  // medium-text HSL (#edf1f2) // hsl(192, 15%, 94%))
   // medium-text HSL (#dadfe1) // hsl(197, 10%, 87%);
-  @include colorHsl("medium-text", 192, 15%, 94%);
+  @include colorHsl("medium-text", 197, 10%, 87%);
 
-  // light-text HSL (#a8a29e) // hsl(25, 5%, 64%)
   // light-text HSL (#ffffff) // hsl(0, 0%, 100%)
-  @include colorHsl("light-text", 25, 5%, 64%);
+  @include colorHsl("light-text", 0, 0%, 100%);
+
+  // fade-grey HSL (#ededed) // hsl(0, 0%, 93%)
+  @include colorHsl("fade-grey", 0, 0%, 93%);
+
+  // light-text HSL (#ffffff) // hsl(0, 0%, 100%)
+  @include colorHsl("dark-text", 0, 0%, 100%);
 }
