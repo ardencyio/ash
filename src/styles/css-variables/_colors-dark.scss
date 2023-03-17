@@ -4,12 +4,7 @@
   --primary-s: 76%; /* Saturation */
   --primary-l: 51%; /* Lightness  */
   --primary-color-invert: var(--fade-grey);
-
-  // placeload colors
-  --placeload-nuance-from: rgb(255 255 255 / 7%);
-  --placeload-nuance-to: rgb(255 255 255 / 15%);
-  --placeload-dark-nuance-from: rgb(0 0 0 / 15%);
-  --placeload-dark-nuance-to: rgb(0 0 0 / 24%);
+  --primary-color-invert: var(--dark-text);
 
   // override light colors
   // @include colorHsl("primary", 5, 76%, 51%);
