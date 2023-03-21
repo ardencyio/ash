@@ -3,8 +3,9 @@
   --primary-h: 5; /* Hue        */
   --primary-s: 76%; /* Saturation */
   --primary-l: 51%; /* Lightness  */
-  --primary-color-invert: var(--fade-grey);
   --primary-color-invert: var(--dark-text);
+
+  --blockquote-text: var(--override-dark-text);
 
   // override light colors
   // @include colorHsl("primary", 5, 76%, 51%);
@@ -14,12 +15,13 @@
   // medium-text HSL (#dadfe1) // hsl(197, 10%, 87%);
   @include colorHsl("medium-text", 197, 10%, 87%);
 
-  // light-text HSL (#ffffff) // hsl(0, 0%, 100%)
-  @include colorHsl("light-text", 0, 0%, 100%);
+  // light-text HSL (#edf1f2) // hsl(192, 15%, 94%))
+  @include colorHsl("light-text", 192, 15%, 94%);
 
-  // fade-grey HSL (#ededed) // hsl(0, 0%, 93%)
-  @include colorHsl("fade-grey", 0, 0%, 93%);
-
-  // light-text HSL (#ffffff) // hsl(0, 0%, 100%)
+  // set dark text to white
   @include colorHsl("dark-text", 0, 0%, 100%);
+
+  // create special dark text for buttons and apply
+  // to src/styles/css-variables/components/base/_button.scss
+  @include colorHsl("override-dark-text", 226, 34%, 24%);
 }

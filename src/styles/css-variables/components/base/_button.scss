@@ -23,7 +23,7 @@
   --button-base-bg-color: var(--night-light-14);
   --button-base-border-color: var(--night-light-18);
   --button-base-border-color-hover: var(--night-light-30);
-  --button-primary-color: var(--dark-text);
+  --button-primary-color: var(--override-dark-text);
   --button-primary-color-inverted: var(--white);
   --button-primary-bg-color: var(--white);
   --button-primary-bg-color-hover: var(--white);
@@ -32,5 +32,5 @@
   --button-light-color: var(--white-smoke);
   --button-light-bg-color: var(--night-light-10);
   --button-light-border-color: var(--night-light-10);
-  --button-light-color-inverted-hover: var(--dark-text);
+  --button-light-color-inverted-hover: var(--override-dark-text);
 }

@@ -16,6 +16,10 @@ var {
   font-style: normal;
 }
 
+blockquote {
+  color: var(--blockquote-text);
+}
+
 .default-link {
   font-family: var(--font);
   color: var(--primary);

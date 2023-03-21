@@ -1,6 +1,6 @@
 ---
-title: "Markdown Style Guide"
-description: "Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro."
+title: "Want to contribute, submit an article?"
+description: "Some basic Markdown syntax that can be used when writing Markdown content."
 created: "Jul 01 2022"
 updated: "Mar 07 2023"
 image: "/img/vectors/content.svg"
@@ -10,7 +10,9 @@ tags: ["astro", "markdown"]
 language: "en"
 ---
 
-Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
+Wnat to submit an article and get full creditation? Here is a sample of some basic Markdown syntax that can be used when writing content in Markdown. 
+
+Don't forget to share a logo/avatar and suggested tags too.
 
 ## Headings
 
@@ -99,14 +101,10 @@ The blockquote element represents content that is quoted from another source, op
   - Milk
   - Cheese
 
-## Other Elements — abbr, sub, sup, kbd, mark
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
+## Other Elements — sub, sup, mark
 
 H<sub>2</sub>O
 
 X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
 
 Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
