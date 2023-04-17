@@ -10,7 +10,7 @@ tags: ["terms", "documents"]
 language: "en"
 ---
 
-![This is a placeholder image description](/img/vectors/terms-accept.svg)
+![Terms and conditions](/img/vectors/terms-accept.svg)
 
 # Terms and Conditions
 
@@ -46,9 +46,9 @@ For the purposes of these Terms and Conditions:
 - __Service__ refers to the Website.
 
 
-- __Terms and Conditions__ (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. This Terms and Conditions agreement has been created with the help of the [Free Terms and Conditions Generator](https://www.freeprivacypolicy.com/free-terms-and-conditions-generator/).
+- __Terms and Conditions__ (also referred as "Terms") mean these Terms and Conditions that form the entire agreement between You and the Company regarding the use of the Service. 
 - __Third-party Social Media Service__ means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.
-- __Website__ refers to ardency, accessible from [https://ardency.io](https://ardency.io)
+- __Website__ refers to ardency, accessible from [https://ardency.sh](https://ardency.sh)
 - __You__ means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.
 
 # Acknowledgment
